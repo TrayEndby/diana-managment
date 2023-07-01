@@ -11,10 +11,10 @@ do
         export GIT_AUTHOR_DATE="$Y-$M-$D 12:$i:00"
         git add commit.md -f
         git commit --date="$Y-$M-$D 12:0$i:00" -m "$i on $M $D $Y"
-        git push origin master
+        git push origin main
         echo "" > commit.md
         git commit -am "Cleanup"
-        git push origin master
+        git push origin main
       done
     done
   done
