@@ -1,9 +1,9 @@
 
-for Y in {2017..2017}
+for Y in {2023..2023}
 do
-  for M in {11..12}
+  for M in {7..7}
   do
-    for D in {01..31}
+    for D in {1..15}
     do
       for i in {01..12}
       do
