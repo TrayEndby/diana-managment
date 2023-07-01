@@ -16,6 +16,6 @@ do
     done
   done
 done
-git push origin main
+git push origin master
 git commit -am "Cleanup"
-git push origin main
+git push origin master
