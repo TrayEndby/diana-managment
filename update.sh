@@ -1,6 +1,6 @@
 for Y in {2023..2023}
 do
-  for M in {07..7}
+  for M in {7..7}
   do
     for D in {01..14}
     do
@@ -11,12 +11,11 @@ do
         export GIT_AUTHOR_DATE="$Y-$M-$D 12:$i:00"
         git add commit.md -f
         git commit --date="$Y-$M-$D 12:0$i:00" -m "$i on $M $D $Y"
+        git push origin master
+        echo "" > commit.md
+        git commit -am "Cleanup"
+        git push origin master
       done
     done
   done
 done
-
-git push origin master
-echo "" > commit.md
-git commit -am "Cleanup"
-git push origin master
