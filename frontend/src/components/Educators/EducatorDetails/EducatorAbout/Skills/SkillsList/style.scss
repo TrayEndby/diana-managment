@@ -1,0 +1,36 @@
+@import 'constants/variables.scss';
+
+.skill-container {
+    display: flex;
+    margin: 0px -10px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background-color: $blue-dark;
+    color: white;
+    border-radius: 20px;
+    color: $white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 0 40px;
+    margin: 10px;
+    position: relative;
+
+    &__remove {
+        position: absolute;
+        width: 10px;
+        height: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDEyIDExIj48Zz48Zz48Zz48cGF0aCBkPSJNMSAxbDEwIDkiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1taXRlcmxpbWl0PSIyMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMSAxbDEwIDkiLz48L2c+PGc+PHBhdGggZD0iTTEgMTBsMTAtOSIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW1pdGVybGltaXQ9IjIwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xIDEwbDEwLTkiLz48L2c+PC9nPjwvZz48L3N2Zz4=');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

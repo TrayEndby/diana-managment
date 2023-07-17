@@ -1,0 +1,25 @@
+@import 'constants/variables.scss';
+
+.times {
+    margin: 0.5rem auto;
+    width: 70%;
+
+    @media (max-width: $sm) {
+        width: 100%;
+    }
+
+    @media (max-width: $sm) {
+        width: 90%;
+    }
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.button {
+    width: 200px;
+    margin: 1.5rem auto;
+}

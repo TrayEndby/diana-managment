@@ -1,0 +1,53 @@
+@import '../../../constants/variables.scss';
+
+// XXX TODO: reuse the same style as college search
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 13px;
+    background-color: $grey-blue-light;
+    min-height: 61px;
+
+    .filterManipulation {
+        background-color: $grey-blue-light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > * {
+            cursor: pointer;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: $blue-dark;
+
+    .container {
+        padding: 30px;
+        margin: 0px;
+
+        &:nth-child(odd) {
+            background-color: $grey-blue-light;
+        }
+        &:nth-child(even) {
+            background-color: $blue-dark;
+        }
+    }
+}
+
+.clearAll {
+    position: relative;
+    top: 3px;
+}
+
+p.textSmall {
+    font-size: 14px;
+}

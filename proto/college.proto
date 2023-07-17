@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package ai.kyros.diana.service.college;
+
+message Request {
+	message RawCollegeInfo{
+		string name = 1;
+		bool isCollege = 2;
+	}
+	enum RequestType {
+		RawCollegeInfoByName = 0;
+		RawCollegeInfoById = 1;
+	}
+	RequestType mode  = 1 ;
+	oneof RequestInfo {
+     RawCollegeInfo rawCollegeInfo = 2;
+     string name = 3;
+	}
+
+}
+
+// raw data for now
+// will add query info
+message Response {
+	message RawCollegeInfo {
+		string entity = 1;
+		string category = 2;
+		string subcategory = 3;
+		string attribute = 4;
+		int32  year = 5;
+		string valstr = 6;
+		double valnum = 7;
+	}
+	repeated RawCollegeInfo rawCollegeInfos = 1;
+}
+

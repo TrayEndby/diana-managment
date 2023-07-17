@@ -1,0 +1,252 @@
+@import '../../../constants/variables.scss';
+
+$borderColor: $grey;
+
+.educatorSidebar {
+    background-color: $blue-dark;
+    height: 100%;
+    position: relative;
+
+    .collapsedPanel {
+        background-color: inherit;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(100%);
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+        &.visible {
+            display: flex;
+        }
+    }
+}
+
+.editContainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.editPencil {
+    margin-left: auto;
+    cursor: pointer;
+    svg {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+.closeIcon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.openIcon {
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    svg {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+.avatarWrap {
+    position: relative;
+
+    .statusWrap {
+        border: 1px solid $green;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: -15px;
+        bottom: 0;
+        transform: translate(100%, -50%);
+
+        .status {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            padding: 0 12px;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                height: 3px;
+                width: 3px;
+                border-radius: 50%;
+                background-color: $green;
+                margin-right: 5px;
+            }
+        }
+
+        .statusGreen {
+            border-color: $green;
+            color: $green;
+        }
+    }
+}
+
+.categoryRow {
+    display: flex;
+}
+
+.categoryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+
+    &:first-child {
+        border-left: 0;
+    }
+}
+
+.categoryName {
+    font-size: 16px;
+    font-weight: 700;
+    color: $orange;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.categoryInfo {
+    line-height: 1;
+    color: $white;
+    //color: $grey-light;
+}
+
+.serviceContainer {
+    max-height: 30vh;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.serviceItem {
+    border: 1px solid $grey;
+    margin-bottom: 10px;
+}
+
+.serviceItemSmall {
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:first-child {
+        border-right: 1px solid $grey;
+    }
+}
+
+.serviceName {
+    font-size: 16px;
+    font-weight: 700;
+    color: $orange;
+    line-height: 1;
+    border-bottom: 1px solid $grey;
+    padding: 10px;
+}
+
+.serviceInfo {
+    line-height: 1;
+    color: $white;
+    margin-bottom: 8px;
+}
+
+.serviceInfoBig {
+    composes: serviceInfo;
+    font-size: 17px;
+}
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+
+    .rating {
+        color: $white;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 600;
+        margin: 5px 5px 0 5px;
+    }
+
+    .ratings {
+        color: $orange;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 5px 5px 0 0px;
+        line-height: 1;
+    }
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    padding: 15px;
+    background-color: $blue-dark;
+
+    .cardHeader {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        position: relative;
+    }
+
+    .cardImg {
+        border-radius: 50%;
+        background-color: $green;
+        height: 80px;
+        width: 80px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .cardBody {
+        padding: 0;
+        margin-bottom: -1px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .button {
+            margin-top: 1rem;
+            width: 70%;
+            align-self: center;
+        }
+    }
+
+    .nameWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+
+        .name {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1;
+            color: $white;
+        }
+
+        .location {
+            color: $white;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.button {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,57 @@
+@import '../../../constants/variables.scss';
+
+.wrapper {
+    width: 100%;
+    background-color: $light-blue-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .rightContainer {
+        min-height: 100vh;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 769px) {
+            padding: 0 50px 20px 50px;
+        }
+
+        @media screen and (max-width: 769px) {
+            padding: 0 20px 20px 20px;
+        }
+    }
+
+    .editProfileForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    :global(.form-group) {
+        @media screen and (min-width: 769px) {
+            width: calc(50% - 40px);
+        }
+
+        @media screen and (max-width: 769px) {
+            width: 100%;
+        }
+
+        &:nth-of-type(5),
+        &:nth-of-type(6) {
+            width: 100%;
+        }
+
+        :global(.form-label) {
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import 'constants/variables.scss';
+
+$size: 120px;
+
+.container {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  z-index: $z-index-md;
+
+  > img {
+    display: none;
+    cursor: pointer;
+
+    @media (min-width: $sm) {
+      width: $size;
+      height: $size;
+      display: flex;
+    }
+  }
+}
+
+.messages {
+  position: absolute;
+  background-color: $blue-dark;
+  bottom: 150px;
+  left: -90px;
+  border-radius: 20px;
+  padding: 20px;
+  max-height: 80vh;
+  min-height: $size;
+  width: $size;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $sm) and (min-height: 700px) {
+    padding: 20px;
+  }
+
+  @media (min-width: $xl) {
+    width: 250px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 100px;
+    bottom: -40px;
+    border: 13px solid transparent;
+    border-top: 28px solid $blue-dark;
+    z-index: $z-index-md;
+    transform: skewX(41deg);
+  }
+
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .content {
+    overflow: auto;
+    height: 100%;
+  }
+
+  p {
+    color: white;
+    margin: 0;
+  }
+}

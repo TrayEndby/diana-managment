@@ -1,0 +1,48 @@
+@import 'constants/variables.scss';
+
+.container {
+  color: white;
+
+  :global(.wrapper) {
+    bottom: 115px;
+    right: 0;
+    padding: 0.5rem 1rem;
+    max-height: 80vh;
+    width: 360px;
+
+    &::before {
+      right: 75px;
+      bottom: -40px;
+    }
+
+    :global(.content) {
+      width: 100%;
+    }
+  }
+}
+
+.hideContent {
+  color: black !important;
+  background-color: white !important;
+  width: 80px !important;
+  right: 20px !important;
+  bottom: 105px !important;
+  border: 1px solid $grey-light;
+  box-shadow: 0px 1px 0px 0px rgba($color: #000000, $alpha: 0.3);
+  text-align: center !important;
+  padding: 0.3rem !important;
+
+  &::before {
+    border-top-color: white !important;
+    right: 20px !important;
+    bottom: -25px !important;
+    border-top-width: 16px !important;
+  }
+
+  > div {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+  }
+}

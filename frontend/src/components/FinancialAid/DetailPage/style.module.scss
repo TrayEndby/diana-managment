@@ -1,0 +1,172 @@
+@import '../../../constants/variables.scss';
+
+.pageWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    background-color: $grey-dark;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    height: 110px;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+        height: 60px;
+        flex-direction: row;
+    }
+
+    .headline {
+        text-align: center;
+        color: $light-warm-grey;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headerStatus {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        @media (min-width: $sm) {
+            margin-top: 0;
+        }
+
+        button {
+            margin: 0 8px;
+        }
+    }
+}
+
+.content {
+    max-width: 1360px;
+    width: 100%;
+    background-color: $white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    overflow-y: scroll;
+    height: calc(100vh - 172px);
+
+    @media (min-width: $sm) {
+        height: calc(100vh - 122px);
+    }
+
+    @media (min-width: $md) {
+        padding: 30px 50px;
+    }
+
+    @media (min-width: $lg) {
+        padding: 30px 175px;
+    }
+}
+
+.contentHeadline {
+    color: $black;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $md) {
+        padding: 0 25px;
+    }
+}
+
+.rowContainer {
+    border-top: 1px solid $asphalt-black;
+    border-bottom: 1px solid $asphalt-black;
+    padding: 10px 0px;
+    margin-bottom: -1px;
+
+    @media (min-width: $md) {
+        padding: 20px 25px;
+    }
+
+    .row {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+        flex-direction: row;
+    }
+}
+
+.rowHeadline {
+    color: $black;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.rowCategory {
+    color: $green;
+    font-size: 18px;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 0;
+
+    @media (min-width: $sm) {
+        width: 30%;
+    }
+}
+
+.rowTextContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+
+    @media (min-width: $sm) {
+        width: 70%;
+    }
+}
+
+.rowTextContainerFullWidth {
+    composes: rowTextContainer;
+    width: 100%;
+    text-align: left;
+}
+
+.rowText {
+    color: $black;
+    font-size: 18px;
+    font-weight: 600;
+    flex-grow: 1;
+    margin-bottom: 0;
+    text-align: left;
+
+    @media (min-width: $sm) {
+        text-align: center;
+    }
+}
+
+.rowTextLeft {
+    composes: rowText;
+    text-align: left;
+}
+
+.rowLink {
+    color: #0a71a8;
+}
+
+.rowList {
+    margin-bottom: 0;
+    .rowText {
+        text-align: left;
+    }
+}

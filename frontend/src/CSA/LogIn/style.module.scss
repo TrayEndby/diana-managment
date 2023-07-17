@@ -1,0 +1,49 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-image: url("../../assets/LogInBg.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        padding-bottom: 120px;
+    }
+}
+
+.box {
+    background-color: white;
+    width: 550px;
+    height: min-content;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    > p {
+        color: $green;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 600;  
+    }
+
+    > h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 600; 
+        color:$blue-dark;
+    }
+
+    > button {
+        position: absolute;
+        top:1%;
+        right: 1%;    
+    }
+}

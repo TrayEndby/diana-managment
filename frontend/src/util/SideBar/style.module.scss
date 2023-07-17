@@ -1,0 +1,113 @@
+@import 'constants/variables.scss';
+
+$sidebarWidth: 280px;
+
+.wrap {
+    display: flex;
+    height: 100%;
+
+    @media (min-width: $md) {
+        height: 100%;
+    }
+}
+
+.sidebar {
+    background-color: $blue-dark;
+    color: $white;
+    font-size: 14px;
+
+    flex-shrink: 0;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 1;
+    padding: 12px 10px 12px 20px;
+    height: calc(100vh - #{$nav-height});
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    // width: 0;
+    left: 0;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $md) {
+        transform: none;
+        position: static;
+        width: $sidebarWidth;
+    }
+
+    :global(.card-header) {
+        color: $orange;
+        font-size: 18px;
+    }
+
+    .list {
+        margin-left: 25px;
+        padding-top: 0;
+    }
+
+    .text {
+        &:hover {
+            background-color: $grey-blue-light;
+            cursor: pointer;
+        }
+    }
+
+    .selectedText {
+        background-color: $grey-blue-light;
+    }
+
+    h3,
+    h4,
+    h5 {
+        color: $orange;
+        font-size: 18px;
+    }
+
+    p,
+    a {
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.sidebarContent {
+    height: calc(100% - 40px);
+
+    @media (min-width: $md) {
+        height: 100%;
+    }
+}
+
+.fullWidthSidebar {
+    background-color: $blue-dark;
+    color: $white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: initial;
+    border-top: none;
+
+    @media (min-width: 665px) {
+        align-items: flex-start;
+    }
+}
+
+.sidebarOpen {
+    width: $sidebarWidth;
+    transform: none;
+    bottom: 0;
+    top: 0;
+}
+
+.wideSidebar {
+    padding: 0;
+    width: 350px;
+    height: 100%;
+    background: transparent;
+    font-size: initial;
+    background-color: $blue-dark;
+}

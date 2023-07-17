@@ -1,0 +1,65 @@
+@import 'constants/variables.scss';
+
+.form {
+    position: absolute;
+    right: 13%;
+    top: 27%;
+    width: 458px;
+    height: 651px;
+    border-radius: 10px;
+    padding: 27px;
+    box-shadow: 10px 8px 5px #bfbfbf;
+    background-image: url("../../assets/CSA/Landing/Thank-you.png");
+}
+
+.kyrosLogo {
+    height: fit-content;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.kyrosTitle {
+    margin: auto;
+    margin-left: 5%;
+    color: $white;
+    font-weight: bold;
+    letter-spacing: 12px;
+}
+
+.kyrosContent1 {
+    margin-top: 38%;
+    font-size: 36px;
+    font-weight: bold;
+    color: $white;
+    line-height: 45px;
+    text-align: center;
+}
+
+.kyrosContent2 {
+    font-size: 20px;
+    margin-top: 7%;
+    color: $btn-bg;
+    line-height: 25px;
+    text-align: center;
+}
+
+.kyrosContent3 {
+    font-size: 16px;
+    color: $btn-bg;
+    text-align: center;
+    margin-top: 8%;
+    width: 94%;
+    line-height: 20px;
+    margin-left: 3%;
+}
+
+.becomeButton {
+    background-color: $btn-bg;
+    border-color: transparent;
+    color: rgb(246, 117, 77);
+    margin-left: 30%;
+    margin-top: 18%;
+    margin-bottom: 6%;
+    width: 160px;
+    height: 45px;
+}

@@ -1,0 +1,33 @@
+@import '../../../../constants/variables.scss';
+
+.loading {
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container {
+    overflow: hidden;
+    background-color: white;
+    margin: 1rem;
+
+    .header {
+        padding: 0 30px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+
+        @media (min-width: $sm) {
+            text-align: left;
+        }
+    }
+
+    .seeMoreButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 140px;
+        min-width: 140px;
+        width: 140px;
+    }
+}

@@ -1,0 +1,227 @@
+@import 'constants/variables.scss';
+
+.webinarPage {
+    background-color: $light-warm-grey !important;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 30px;
+    margin-top: -1px;
+    width: 100vw;
+    margin-left: -16px;
+    overflow: hidden;
+    height: auto;
+    min-height: $md;
+
+    .flexItem {
+        display: flex;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .splitter {
+        background-color: $light-warm-grey;
+        height: 120px;
+        margin-top: 10px;
+        width: 2px;
+    }
+
+    .headerImage {
+        width: 100vw;
+        margin-left: -16px;
+        height: 260px;
+    }
+
+    .maskRectangle {
+        width: 440px;
+        height: 220px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        margin-top: -240px;
+    }
+
+    .headerTextDiv {
+        margin-top: -200px;
+        position: relative;
+        margin-left: 80px;
+        font-weight: bold;
+        height: 156px;
+    }
+
+    .headerText1 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .headerText2 {
+        font-size: 24px;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .RSVPButton {
+        width: 80px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .contentDiv {
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    .contentHeader {
+        background-color: $blue-dark;
+        width: 100vw;
+        height: 60px;
+        margin-left: -16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-top: 10px;
+        margin-top: 54px;
+    }
+
+    .formSelect {
+        width: 150px;
+        margin-right: 3%;
+    }
+
+    .splitter {
+        background-color: $grey-light;
+        height: 1px;
+        width: 100%;
+    }
+
+    .scheduleTitle {
+        color: $green;
+        margin-top: 24px;
+        font-size: 18pt;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+
+    @media screen and (max-width: 450px) {
+        .maskRectangle {
+            width: 100% !important;
+        }
+        .headerTextDiv {
+            margin-left: 40px !important;
+        }
+    }
+}
+
+.scheduleCard {
+    position: relative;
+}
+
+.scheduleItem {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: fit-content;
+    cursor: pointer;
+
+    &.small {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        flex-direction: column;
+
+        :global(.leftSection) {
+            margin-right: 0;
+
+            :global(.image) {
+                width: auto;
+                background-size: 100% 100%;
+            }
+        }
+
+        :global(.rightSection) {
+            padding: 0.5rem 1.5rem;
+        }
+    }
+
+    :global(.leftSection) {
+        max-height: 250px;
+        display: flex;
+        margin-right: 2rem;
+
+        :global(.image) {
+            width: 400px;
+            padding-top: 2.5rem;
+            background-size: contain;
+            background-repeat: round no-repeat;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        flex-direction: column;
+
+        :global(.leftSection) {
+            margin-right: 0;
+
+            :global(.image) {
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.scheduleImageInfo {
+    flex: 1 1 auto;
+    align-items: center;
+    margin: auto 0.5rem auto 1.5rem;
+
+    .header1 {
+        color: $green;
+        font-size: 11px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .header2 {
+        margin-top: 4px;
+        color: $orange;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .title {
+        font-size: 15px;
+        font-weight: bold;
+        color: $black;
+        line-height: 1.4;
+        margin-top: 8px;
+
+        &.noSpeaker {
+            color: $white;
+        }
+    }
+
+    .date {
+        margin-top: 8px;
+        font-size: 10px;
+        color: $black;
+
+        &.noSpeaker {
+            color: $white;
+        }
+    }
+
+    .duration {
+        margin-top: 4px;
+        font-size: 10px;
+        color: $grey;
+    }
+}

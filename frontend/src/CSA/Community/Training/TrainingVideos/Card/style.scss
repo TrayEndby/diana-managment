@@ -1,0 +1,29 @@
+@import 'constants/variables.scss';
+
+.trainingVideoPage {
+    .App-grid-list {
+        grid-template-columns: 33% 33% 33%;
+
+        @media (max-width: $sm) {
+            grid-template-columns: 100% !important;
+        }
+
+        @media (max-width: $xl) {
+            grid-template-columns: 50% 50%;
+        }
+    }
+    .video {
+        border: none;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        h6 {
+            color: $green !important;
+            margin-bottom: 0.2rem;
+        }
+
+        video {
+            width: 100%;
+        }
+    }
+}

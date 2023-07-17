@@ -1,0 +1,48 @@
+@import '../../constants/variables.scss';
+
+.headline {
+    color: $white;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 0;
+
+    &--white {
+        color: $white;
+    }
+}
+
+.headlineSection {
+    background-color: $grey-blue-black;
+    align-items: center;
+    border-bottom: 0;
+}
+
+.cardBody {
+    background-color: $grey-blue-black;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.btnsHeader {
+    background-color: $grey-blue-light;
+    display: flex;
+    align-items: center;
+
+    &--dark {
+        background-color: $grey-dark;
+    }
+}
+
+.btn {
+    padding: 5px 40px;
+    background-color: $btn-bg;
+    color: $grey-black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    border: none;
+    border-radius: 4px;
+    height: 34px;
+}

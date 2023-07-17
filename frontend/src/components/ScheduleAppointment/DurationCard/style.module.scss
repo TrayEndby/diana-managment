@@ -1,0 +1,72 @@
+@import 'constants/variables.scss';
+
+.container {
+    header {
+        border-bottom: 1px solid $grey;
+    }
+}
+
+.name {
+    margin: 1rem auto 0.5rem auto;
+    color: $green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.msg {
+    margin: 0 auto 1rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.card {
+    margin: 1.5rem auto 0 auto;
+    height: 150px;
+    flex: 0 0 150px;
+    width: 60%;
+    border-top: 9px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: $md) {
+        width: 75%;
+    }
+
+    @media (max-width: $sm) {
+        width: 90%;
+        height: 100px;
+        flex: 0 0 100px;
+
+        > div {
+            font-size: 16px !important;
+        }
+    }
+
+    &.minute-30 {
+        border-top-color: $grey-light;
+
+        > svg {
+            color: $grey-light;
+        }
+    }
+
+    &.minute-60 {
+        border-top-color: $green;
+
+        > svg {
+            color: $green;
+        }
+    }
+
+    > div {
+        margin-left: auto;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    > svg {
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+}

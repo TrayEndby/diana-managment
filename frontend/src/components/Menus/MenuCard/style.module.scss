@@ -1,0 +1,28 @@
+@import 'constants/variables.scss';
+
+.card {
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $orange;
+    color: white;
+  }
+}
+
+.image {
+  flex: 0 0 40%;
+}
+
+.text {
+  flex: 0 0 60%;
+  font-size: 20px;
+  font-weight: bold;
+}

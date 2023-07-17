@@ -1,0 +1,32 @@
+@import '../../../constants/variables.scss';
+
+.detailsTabContainer {
+    background-color: $grey-blue-light;
+    width: 100%;
+    margin: 0;
+
+    > a {
+        background: transparent !important;
+        border-color: transparent !important;
+        color: $light-warm-grey;
+        font-size: 18px;
+        font-weight: 800;
+
+        text-align: center;
+
+        @media (min-width: $sm) {
+            width: 20%;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: transparent !important;
+            outline: none !important;
+        }
+    }
+}
+
+.detailsTab {
+    background-color: transparent;
+    color: $light-warm-grey;
+}

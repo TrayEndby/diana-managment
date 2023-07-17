@@ -1,0 +1,34 @@
+@import 'constants/variables.scss';
+
+.content {
+    font-size: 14px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: $padding-x;
+
+    .iconDiv {
+        width: 32px;
+        float: left;
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+
+    .textDiv {
+        display: inline;
+        color: $green;
+    }
+
+    .nameBlock {
+        font-weight: 700;
+        min-width: 30px;
+    }
+    
+}
+
+.rowBlock {
+    margin-bottom: 0;
+}
+
+.subText {
+    color: $grey-blue-black;
+}

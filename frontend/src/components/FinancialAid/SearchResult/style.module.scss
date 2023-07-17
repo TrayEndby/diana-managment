@@ -1,0 +1,32 @@
+@import '../../../constants/variables.scss';
+
+.container {
+    height: 100%;
+    flex: 1 1 60%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+.content {
+    height: 90%;
+    overflow-y: auto;
+    // overflow-x: scroll;
+}
+
+.noSearchRes {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    top: 20px;
+    color: white;
+    font-size: 18px;
+
+    @media (min-width: $sm) {
+        left: 50%;
+        font-size: 24px;
+    }
+}

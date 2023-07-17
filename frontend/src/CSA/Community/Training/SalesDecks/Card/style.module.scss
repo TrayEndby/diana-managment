@@ -1,0 +1,32 @@
+@import 'constants/variables.scss';
+
+.deck {
+    border: none;
+    margin: 30px;
+
+    h6 {
+        color: $green !important;
+        margin-bottom: 0.2rem;
+        margin-top: 10px;
+    }
+
+    .noteDiv {
+        width: 80%;
+    }
+
+    .downloadDiv {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .downloadSvg {
+        width: 24px;
+        height: 32px;
+        margin-top: 10px;
+        margin-right: 10px;
+        stroke: $orange;
+        color: $orange;
+        cursor: pointer;
+    }
+}

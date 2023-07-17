@@ -1,0 +1,167 @@
+@import 'constants/variables.scss';
+
+.body {
+    background-color: $light-blue-gray;
+}
+
+// .container {
+//     width: 100%;
+//     background-color: $light-blue-gray;
+//     display: flex;
+//     flex-direction: row;
+
+//     .rightContainer {
+//         background-color: white;
+//         border-radius: 10px;
+//         margin-top: 30px;
+//         margin-bottom: 30px;
+//         border-left: 6px solid $green;
+//         padding-bottom: 20px;
+//         margin-right: auto;
+//         overflow: auto;
+
+//         :global(.tab-content),
+//         :global(.tab-pane) {
+//             height: 100%;
+//         }
+//     }
+
+//     .leftContainer {
+//         padding: 0px;
+//         max-height: 188px;
+//         display: flex;
+//         justify-content: center;
+//         background-color: white;
+//         align-items: center;
+//         border-left: 6px solid $green;
+//         border-radius: 10px;
+//         margin-right: 30px;
+//         margin-top: 30px;
+//         margin-left: auto;
+//     }
+
+//     .pills {
+//         flex-direction: column;
+//     }
+
+//     .pills > div > a {
+//         color: black;
+//         font-size: 18px;
+
+//         &:hover,
+//         &:global(.active) {
+//             color: $green;
+//             font-weight: bold;
+//         }
+
+//         &:focus {
+//             outline: none;
+//         }
+//     }
+
+//     @media (max-width: $md) {
+//         flex-direction: column;
+
+//         .leftContainer {
+//             flex: 0 0 45px;
+//         }
+
+//         .pills {
+//             flex-direction: row;
+//         }
+//     }
+// }
+
+.wrapper {
+    width: 100%;
+    background-color: $light-blue-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .rightContainer {
+        min-height: 100vh;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 769px) {
+            padding: 0 50px 20px 50px;
+        }
+
+        @media screen and (max-width: 769px) {
+            padding: 0 20px 20px 20px;
+        }
+    }
+
+    .editProfileForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .subTitle {
+        width: 100%;
+        text-align: center;
+
+        .subTitleSpan {
+            padding: 0 1rem 0 1rem;
+            border-bottom: 2px solid #53a548;
+        }
+    }
+
+    :global(.form-group) {
+        @media screen and (min-width: 769px) {
+            width: calc(50% - 40px);
+        }
+
+        @media screen and (max-width: 769px) {
+            width: 100%;
+        }
+
+        :global(.form-label) {
+            font-weight: 600;
+        }
+    }
+
+    .formContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        :global(form) {
+            @media screen and (min-width: 769px) {
+                width: calc(50% - 40px);
+            }
+
+            @media screen and (max-width: 769px) {
+                width: 100%;
+            }
+
+            &:nth-of-type(1) {
+                width: 100%;
+
+                :global(.form-group) {
+                    @media screen and (min-width: 769px) {
+                        width: calc(50% - 40px);
+                    }
+
+                    @media screen and (max-width: 769px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            :global(.form-group) {
+                width: 100%;
+            }
+        }
+    }
+}

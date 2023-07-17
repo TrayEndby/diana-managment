@@ -1,0 +1,16 @@
+@import '../../../constants/variables.scss';
+
+$topBar-h: 70px;
+
+.topBar {
+    height: $topBar-h;
+    padding: 0 $padding-x;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 $topBar-h;
+}
+
+.searchBar {
+    margin: 0 auto;
+}

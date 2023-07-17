@@ -1,0 +1,72 @@
+@import 'constants/variables.scss';
+
+.productUpdatePage {
+    background-color: #ffffff !important;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    width: 98%;
+    margin-left: 1%;
+    height: 93%;
+    overflow-y: scroll;
+
+    .flexItem {
+        display: flex;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .splitter {
+        background-color: $grey-light;
+        height: 1px;
+        width: 100%;
+    }
+
+    .productItem {
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: row;
+        padding: 20px;
+        height: fit-content;
+    }
+
+    .productImage {
+        width: 400px;
+        height: 200px;
+        float: left;
+        margin-right: 40px;
+    }
+
+    .productTitle {
+        color: $green;
+        margin-top: 24px;
+        font-size: 18pt;
+    }
+
+    .searchDiv {
+        border: 1px solid black;
+        border-radius: 16px;
+        width: fit-content;
+        padding: 2px 20px 2px 20px;
+        margin: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .readmore {
+        font-weight: bold;
+        color: $orange;
+        display: inline;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 450px) {
+        .productImage {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}

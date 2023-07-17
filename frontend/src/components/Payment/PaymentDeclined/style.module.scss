@@ -1,0 +1,72 @@
+@import '../../../constants/variables.scss';
+
+.paymentDeclinedWrapper {
+    background-color: $white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+    }
+
+    .header {
+        width: 100%;
+        border-bottom: 1px solid #acacac;
+    }
+
+    .headline {
+        color: $red;
+        font-size: 42px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+
+        .xCircle {
+            color: $red;
+            margin-bottom: 30px;
+        }
+        .contentTitle {
+            color: $green;
+            font-size: 36px;
+            font-weight: 800;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .contentText {
+            color: #5a5a5a;
+            font-size: 26px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: center;
+            /* Text style for "We receive" */
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+    }
+
+    .submit {
+        font-size: 22px;
+    }
+}

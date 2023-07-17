@@ -1,0 +1,69 @@
+@import "constants/variables.scss";
+
+.topBar {
+  padding: 0px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+
+  .searchBar {
+    display: flex;
+    border-radius: 5px;
+    background-color: $white;
+    width: 450px;
+    max-height: 36px;
+  }
+
+  .expandDiv {
+    width: 36px;
+    height: 36px;
+    margin-left: -35px;
+    background-color: rgb(247, 129, 84);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 98%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 1%;
+    background-color: $grey-light;
+    height: 1px;
+  }
+
+  .downCaret {
+    fill: $white;
+    width: 25px;
+    height: 25px;
+    margin-left: 4px;
+    margin-top: 6px;
+  }
+}
+
+.searchDiv {
+  width: 460px;
+  height: 430px;
+  position: absolute;
+  top: 37px;
+  z-index: 10;
+  margin-left: -4px;
+  background-color: $white;
+  border: solid 1px $grey;
+  padding: 12px;
+  text-align: left;
+
+  :global(label) {
+    font-size: 15px;
+    color: $black;
+  }
+
+  .contentCaption {
+    font-size: 18px;
+    color: $orange;
+  }
+}

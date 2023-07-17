@@ -1,0 +1,57 @@
+@import "constants/variables.scss";
+
+.mainCardHeader {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $blue-dark !important;
+  color: $white;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  margin-top: -25px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.mask {
+  margin-top: -120px;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  background-color: $black;
+  opacity: 10%;
+}
+
+.photoView {
+  width: 122px;
+  height: 122px;
+  border-radius: 100%;
+  border: 1px solid $orange;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.splitter {
+  width: 100%;
+  margin: auto;
+  margin-top: 8px;
+  height: 1px;
+  background-color: $light-blue-gray;
+}
+
+.orangeText {
+  color: $orange;
+  font-size: 16px;
+}
+
+.speakerPicture {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}

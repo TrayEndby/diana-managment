@@ -1,0 +1,116 @@
+@import '../../constants/variables.scss';
+
+.wrapper {
+    background-color: $light-blue-gray;
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 6px solid $orange;
+    padding: 20px 10px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @media (min-width: $sm) {
+        width: 80%;
+        padding: 60px 15px;
+        margin: 60px auto;
+    }
+
+    @media (min-width: $lg) {
+        width: 60%;
+        padding: 60px;
+    }
+}
+
+.infoSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+        flex-direction: row;
+    }
+}
+
+.btnSection {
+    display: flex;
+
+    button {
+        margin-right: 16px;
+    }
+}
+
+.messageContainer {
+    composes: container;
+    border-left: none;
+    padding: 5px;
+}
+
+.basic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .name {
+        color: $orange;
+        font-size: 1.5rem;
+    }
+}
+
+.image {
+    margin-right: 16px;
+}
+
+.school {
+    flex: 1 1 45%;
+    max-width: 100%;
+    border: 1px solid $grey-dark;
+    border-radius: 10px;
+    height: 100%;
+    padding: $padding-x;
+
+    @media (min-width: $sm) {
+        max-width: 45%;
+    }
+
+    header {
+        border-bottom: 1px solid $grey-light;
+        margin-bottom: 8px;
+    }
+
+    div {
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+            @media (max-width: $sm) {
+                max-width: 150px;
+            }
+        }
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 16px;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
+    }
+}
+
+.capText {
+    text-transform: capitalize;
+}

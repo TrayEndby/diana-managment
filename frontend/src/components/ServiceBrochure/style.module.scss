@@ -1,0 +1,133 @@
+@import '../../constants/variables.scss';
+
+.service-container {
+    background-color: $light-warm-grey;
+
+    .hero-container {
+        background-image: url('../../assets/brochures/service-head-bg.png');
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        padding: 50px 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .hero-logo {
+            background-image: url('../../assets/brochures/logo.svg');
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 100px;
+            background-size: contain;
+        }
+
+        .hero-url {
+            flex: 1;
+            text-align: right;
+
+            a {
+                font-size: 20px;
+                color: $white;
+                font-weight: 900;
+                letter-spacing: 1px;
+            }
+        }
+
+        .hero-details {
+            background-image: url('../../assets/brochures/service-head-text.svg');
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 500px;
+            background-size: contain;
+        }
+    }
+
+    .service-info {
+        padding: 0 100px 50px 100px;
+
+        h2 {
+            color: $orange;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        p:first-child {
+            position: relative;
+        }
+
+        .moon {
+            background-image: url('../../assets/brochures/moon.svg');
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 200px;
+            background-size: contain;
+            position: absolute;
+            right: 100px;
+        }
+
+        .image1 {
+            max-width: 800px;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: '\2022';
+            color: $black;
+            font-weight: bold;
+            display: inline-block;
+            width: 20px;
+            margin-left: -25px;
+            font-size: 20px;
+            line-height: 20px;
+            vertical-align: top;
+        }
+    }
+
+    .highlight {
+        color: $orange;
+        font-weight: bold;
+    }
+
+    .service-footer {
+        display: flex;
+        align-items: flex-end;
+        background-color: $blue-dark;
+        padding: 50px 100px;
+        position: relative;
+
+        .footer-learn-more {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            transform: translateY(-50%);
+            background-image: url('../../assets/brochures/learn-more.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50px;
+            width: 500px;
+        }
+
+        .footer-logo {
+            background-image: url('../../assets/brochures/footer-logo.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 80px;
+            width: 300px;
+        }
+
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            font-weight: bold;
+            color: $white;
+            font-size: 18px;
+            padding-bottom: 16px;
+        }
+    }
+}

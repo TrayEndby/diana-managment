@@ -1,0 +1,52 @@
+@import '../../../constants/variables.scss';
+
+.titleStyle {
+    position: relative;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+        height: 35px;
+    }
+
+    @media (min-width: $md) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media (min-width: $lg) {
+        height: auto;
+    }
+}
+
+.backButtonStyle {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    z-index: 1;
+}
+
+.backButtonStyleSearchRes {
+    top: 41px;
+
+    @media (min-width: $sm) {
+        top: 9px;
+    }
+}
+
+.editColumns {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media (min-width: $sm) {
+        top: -4px;
+    }
+}
+
+.headline {
+    color: white;
+    text-align: center;
+    width: 100%;
+}

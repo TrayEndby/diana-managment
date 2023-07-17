@@ -1,0 +1,35 @@
+@import '../../../constants/variables.scss';
+
+.top {
+    color: $grey;
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        flex: 0 0 70%;
+        width: 70%;
+    }
+
+    .right {
+        flex: 0 0 30%;
+        width: 30%;
+    }
+}
+
+.content {
+    margin-top: 1rem;
+}
+
+.recommend {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+    > div {
+        overflow-y: auto;
+        padding-right: 0.5rem;
+    }
+}

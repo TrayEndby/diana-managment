@@ -1,0 +1,110 @@
+syntax = "proto3";
+
+package ai.kyros.diana.service.profile;
+
+message ProfileInfo{
+  string fristName = 1;
+  string lastName = 2;
+  string email = 3;
+  string addEmail = 4;
+}
+
+enum Gender {
+  Male = 0;
+  Female = 1;
+  TransMale = 2;
+  TransFemal = 3;
+  Other =4;
+ }
+enum Race {
+  White = 0 ;
+  BlackOrAfricanAmerican = 1 ;
+  AmericanIndianOrAlaskaNative = 2; 
+  Asian = 3;
+  NativeHawaiianOrOtherPacificIslander = 4;
+  TwoOrMore=5;
+}
+message PersonalInfo {
+  int32  day  = 1 ;
+  int32  month =2 ;
+  int32  year  =3 ;
+  Gender gender= 4;
+  bool   hispanic = 5;
+  Race   race = 6;
+  string city = 7;
+  string state = 8;
+  string country = 9;
+}
+
+message SchoolInfo {
+  string schoolName = 1;
+  string schoolCity = 2;
+  string schoolState = 3;
+  int32  expectedGraduateYear = 4;
+  float  gpa = 5;
+}
+
+message CourseInfo{
+   string subject = 1;
+   string course = 2;
+   string score = 3;
+   int32  semester = 4;
+   int32  year = 5;
+}
+
+enum TestType {
+  AP = 0;
+  SAT = 1;
+  ACT = 2;
+  SATSubject =3;
+}
+
+message TestInfo {
+  TestType type = 1;
+  string subject = 2;
+  string name = 3;
+  int32  month = 4;
+  int32  year = 5;
+  string score = 6;
+}
+
+message ExtraCurricularInfo {
+    string category = 1;
+    string name = 2;
+    string howOften=3;
+    int32  years = 4 ;
+    int32  level = 5;
+}
+
+message Request {
+  enum RequestType {
+    Profile = 0;
+    Personal = 1;
+    Course = 2;
+    Tests = 3;
+    ExtraCurricular = 4;
+    Other = 5;
+  }
+  enum Action {
+    Search = 0;
+    Update = 1;
+    Delete = 2;
+  }
+
+//  RequestType mode  = 1 ;
+  int32       profileId = 2;
+  int32       action = 3;
+  ProfileInfo profile = 4;
+  PersonalInfo personal = 5;
+  SchoolInfo school = 6;
+  repeated CourseInfo courses = 7;
+  repeated TestInfo tests = 8;
+  repeated ExtraCurricularInfo ec = 9;
+}
+
+message Response {
+  // not done yet.
+  int32  status = 1;
+  int32  profileId = 2;
+}
+

@@ -1,0 +1,28 @@
+@import 'constants/variables.scss';
+
+.container {
+    text-align: center;
+    background-color: $white;
+    border-radius: 6px;
+    padding: 32px;
+    margin-bottom: 16px;
+
+    h4{
+        margin-top: 12px;
+    }
+
+    @media screen and (max-width: $sm) {
+        ul ul li {
+            margin-left: -20px !important;
+        }
+        ul ul ul li {
+            margin-left: -40px !important;
+        }
+        ul ul ul ul li {
+            margin-left: -60px !important;
+        }
+        ul ul ul ul ul li {
+            margin-left: -80px !important;
+        }
+    }
+}

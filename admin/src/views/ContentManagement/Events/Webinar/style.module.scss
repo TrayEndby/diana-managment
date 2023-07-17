@@ -1,0 +1,126 @@
+@import "constants/variables.scss";
+
+:global(.webinar) {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.scheduleCard {
+  position: relative;
+  border-bottom: 1px solid $grey;
+}
+
+.titleDiv {
+	padding: 8px;
+	padding-left: 16px;
+  font-weight: bold;
+  color: $black;
+}
+
+.splitter {
+  width: 90%;
+  height: 1px;
+  background-color: $grey;
+}
+
+.scheduleItem {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  cursor: pointer;
+
+  &.small {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    flex-direction: column;
+
+    :global(.leftSection) {
+      margin-right: 0;
+
+      :global(.image) {
+        width: auto;
+        height: 200px;
+        background-size: 100% 100%;
+      }
+    }
+
+    :global(.rightSection) {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+
+  :global(.leftSection) {
+    max-height: 250px;
+    display: flex;
+
+    :global(.image) {
+      width: 400px;
+      height: 200px;
+      padding-top: 2.5rem;
+      background-size: contain;
+      background-repeat: round no-repeat;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+
+    :global(.leftSection) {
+      margin-right: 0;
+
+      :global(.image) {
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+.scheduleImageInfo {
+  flex: 1 1 auto;
+  align-items: center;
+  margin: auto 0.5rem auto 1.5rem;
+
+  .header1 {
+    color: $green;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .header2 {
+    margin-top: 4px;
+    color: $orange;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: $black;
+    line-height: 1.4;
+    margin-top: 8px;
+
+    &.noSpeaker {
+      color: $white;
+    }
+  }
+
+  .date {
+    margin-top: 8px;
+    font-size: 10px;
+    color: $black;
+
+    &.noSpeaker {
+      color: $white;
+    }
+  }
+
+  .duration {
+    margin-top: 4px;
+    font-size: 10px;
+    color: $grey;
+  }
+}

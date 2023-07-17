@@ -1,0 +1,13 @@
+@import '../../constants/variables.scss';
+
+.spinner {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+
+    @media (min-width: $sm) {
+        margin-left: -4em;
+        margin-top: -4em;
+        left: 50%;
+    }
+}

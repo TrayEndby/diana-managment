@@ -1,0 +1,148 @@
+@import 'constants/variables.scss';
+
+.container {
+    > section {
+        padding: 2rem;
+    }
+
+    header {
+        margin-bottom: 1rem;
+        h5 {
+            text-align: center;
+        }
+    }
+}
+
+.lister {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        color: $white;
+        flex: 1 1 auto;
+
+        &.white {
+            .placeholder {
+                border: 1px solid $grey-light;
+            }
+
+            svg {
+                color: $grey-dark !important;
+            }
+
+            :global(.carousel-indicators) li {
+                background-color: $orange;
+            }
+        }
+
+        :global(.carousel-indicators) li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+
+        :global(.carousel-control-prev), :global(.carousel-control-next) {
+            width: 5%;
+
+            svg {
+                margin-top: auto;
+                margin-bottom: auto;
+                color: $white;
+            }
+        }
+
+        :global(.carousel-control-prev) {
+            svg {
+                margin-right: auto;
+            }
+        }
+
+        :global(.carousel-control-next) {
+            svg {
+                margin-left: auto;
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .placeholder {
+                margin: 0 2rem;
+                flex: 0 0 25%;
+                background-color: white;
+                color: black;
+                height: 300px;
+                position: relative;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.videos {
+    background-color: $blue-dark;
+    height: 420px;
+
+    h5 {
+        color: $white;
+    }
+
+    :global(.card) {
+        margin-left: 0;
+        margin-right: 0;
+
+        h6, :global(.source) {
+            padding-left: 0.5rem;
+        }
+    }
+
+    .placeholder {
+        height: 250px !important;
+    }
+}
+
+.flyers {
+    background-color: $white;
+    height: 480px;
+
+    .placeholder {
+        display: flex;
+
+        :global(.card) {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.webinars {
+    background-color: $white;
+    border-top: 1px solid $grey-light;
+
+    :global(.webinar) {
+        height: 100%;
+        overflow: auto;
+        padding: 0;
+
+        :global(.leftSection) {
+            height: 210px;
+        }
+    }
+
+    .placeholder {
+        height: 320px !important;
+    }
+}
+
+.questions {
+    background-color: $white;
+    height: 300px;
+}
+
+.wave {
+    background: url('../../assets/CSA/wave.png');
+}

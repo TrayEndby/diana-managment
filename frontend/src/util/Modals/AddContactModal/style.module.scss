@@ -1,0 +1,59 @@
+@import '../../../constants/variables.scss';
+
+.modal {
+    width: 100%;
+    max-width: initial;
+
+    @media (min-width: $sm) {
+        width: 50vw;
+    }
+
+    .card {
+        border: none;
+
+        .body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            color: $white;
+            background-color: $blue-dark;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                position: absolute;
+                align-self: self-end;
+                top: 20px;
+                right: 30px;
+                color: white;
+                padding: 0;
+                outline: none;
+            }
+        }
+
+        .formField {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $grey-light;
+
+            @media (min-width: $sm) {
+                grid-template-columns: 300px 1fr;
+            }
+
+            .label {
+                font-size: 24px;
+                color: $green;
+            }
+        }
+
+        button {
+            align-self: flex-end;
+        }
+    }
+}

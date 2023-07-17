@@ -1,0 +1,89 @@
+.container {
+  background-color: rgb(167, 167, 167);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 80%;
+
+  :global(.card-deck) {
+    height: calc(100% - 60px);
+    padding: 20px;
+  }
+
+  :global(.card) {
+    border: none;
+    text-align: center;
+    width: 30vw;
+    height: calc(100vh - 270px);
+  }
+
+  :global(.left-side) {
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  :global(.right-side) {
+    border-radius: 0;
+    background-color: white;
+    box-shadow: 7px 7px 19px rgba(82, 82, 82, 0.35);
+  }
+
+  :global(.jumbotron) {
+    background-color: transparent !important;
+  }
+
+  :global(.rise-with-kyros) {
+    font-style: italic;
+    color: #53A548;
+    font-size: 19px;
+  }
+
+  :global(.signin-type) {
+    font-size: 23px;
+    font-weight: 900;
+    color: #53A548;
+  }
+
+  :global(.educator-signin) {
+    font-size: 23px;
+    font-weight: 900;
+  }
+
+  :global(.signup-text) {
+    font-weight: 900;
+    font-size: 16px;
+    margin: 50px 0;
+  }
+
+  :global(.legal) {
+    font-size: 13px;
+  }
+
+  :global(.signup-link) {
+    color: #F78154;
+  }
+
+  @media only screen and (max-width: 575px) and (min-width: 0px) {
+    :global(.card) {
+      width: 280px;
+      height: calc(100% - 110px);
+    }
+
+    :global(.left-side) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1170px) and (min-width: 576px) {
+    :global(.card) {
+      width: 500px;
+      height: calc(100% - 110px);
+    }
+
+    :global(.left-side) {
+     display: none;
+    }
+ }
+}

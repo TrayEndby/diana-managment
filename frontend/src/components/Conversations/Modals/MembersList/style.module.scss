@@ -1,0 +1,59 @@
+@import 'constants/variables.scss';
+
+:global(.conversation-user-popup) {
+    z-index: 1100 !important; //add bigger z-index to show profile popup in opened modal
+}
+
+.allContactsContainer {
+    max-height: calc(55px * 5);
+    overflow: auto;
+    margin-top: 30px;
+}
+
+.contactItem {
+    background-color: #ffffff;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    &.disabled {
+        background-color: $grey-light;
+        cursor: not-allowed;
+    }
+
+    .userName {
+        margin: 0 0 0 10px;
+        line-height: 14px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .owner {
+        color: $orange;
+    }
+}
+
+.chosenContactContainer {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.chosenContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    flex: 0 0 auto;
+    height: 50px;
+}
+
+.button {
+    margin-top: 1rem;
+}

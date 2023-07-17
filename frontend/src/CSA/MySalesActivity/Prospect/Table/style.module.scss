@@ -1,0 +1,50 @@
+@import 'constants/variables.scss';
+
+.table {
+    margin: 1rem 0;
+    overflow: auto;
+
+    .thead {
+        border: 1px solid $grey-light;
+        font-weight: 600;
+        background-color: $light-warm-grey;
+
+        .td {
+            border-right: 1px solid $grey-light;
+            background-color: $light-warm-grey;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+
+    .tbody {
+        .tr {
+            border-bottom: 1px solid $grey-light;
+        }
+
+        .td {
+            &.name {
+                color: $green;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    .tr {
+        display: flex;
+        flex-direction: row;
+
+        .td {
+            flex: 0 0 16%;
+            padding: 0.2rem 0.5rem;
+            white-space: nowrap;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import 'constants/variables.scss';
+
+.container {
+    width: 100%;
+    z-index: $z-index-md;
+    height: calc(100vh - #{$nav-height});
+}
+
+.header {
+    background-color: $grey-dark;
+
+    h5 {
+        font-weight: 800;
+        margin-bottom: 0;
+    }
+}

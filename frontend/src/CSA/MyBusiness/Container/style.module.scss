@@ -1,0 +1,32 @@
+@import 'constants/variables.scss';
+
+.body {
+  background-color: $light-warm-grey;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.titleSection {
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  margin: 15px auto;
+  text-align: center;
+  justify-content: center;
+  background-color: $orange;
+  min-width: 80%;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 30px;
+  color: $white;
+  font-size: 20px;
+}

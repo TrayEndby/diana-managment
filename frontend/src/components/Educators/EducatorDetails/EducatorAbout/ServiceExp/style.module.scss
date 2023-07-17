@@ -1,0 +1,63 @@
+@import '../../../../../constants/variables.scss';
+
+.serviceContainer {
+    width: 100%;
+
+    @media (min-width: $lg) {
+        width: 80%;
+    }
+}
+
+.serviceItem {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey-light;
+
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .serviceHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .serviceEditContainer {
+            svg {
+                height: 30px;
+            }
+        }
+    }
+
+    .serviceHeadline {
+        color: $black;
+        font-weight: 700;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .serviceSubHeadline {
+        color: $black;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .serviceDesc {
+        margin-top: 10px;
+    }
+
+    .serviceText {
+        margin-bottom: 5px;
+    }
+}
+
+.colorGreen {
+    color: $green !important;
+}
+
+.colorGrey {
+    color: rgba(0, 0, 0, 0.48) !important;
+    font-weight: 700;
+}

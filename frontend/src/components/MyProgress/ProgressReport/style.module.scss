@@ -1,0 +1,64 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-color: $blue-dark;
+    color: white;
+    padding-top: 40px;
+
+    :global(.graphs-container) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        background-color: #173656;
+        margin-top: 70px;
+    }
+
+    :global(.progress-text) {
+        color: $orange;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    
+    :global(.barchart-label-container) {
+        margin-top: 50px;
+        height: 50px;
+        background-color: #173656;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    :global(.labels-container) {
+        height: 500px;
+        background-color: #173656;
+        margin-bottom: 50px;
+    }
+
+    :global(.second-graph) {
+        display: inline;
+    }
+
+    :global(.tabs) {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 20px;
+
+    .title {
+        display: flex;
+        margin: 0.5rem auto;
+        font-weight: bold;
+        color: $white;
+    }
+}

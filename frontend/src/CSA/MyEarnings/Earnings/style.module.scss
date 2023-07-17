@@ -1,0 +1,10 @@
+@import 'constants/variables.scss';
+
+.myEarnings {
+  background-color: $light-warm-grey;
+  padding-bottom: 30px;  
+  
+  .loading {
+    text-align: center;
+  }
+}

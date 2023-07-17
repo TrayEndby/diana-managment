@@ -1,0 +1,27 @@
+@import '../../../../constants/variables.scss';
+
+.expertiseTopBar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    height: 150px;
+
+    .expertiseTitle {
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 530px;
+        line-height: normal;
+    }
+
+    .expertiseSub {
+        color: $orange;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}

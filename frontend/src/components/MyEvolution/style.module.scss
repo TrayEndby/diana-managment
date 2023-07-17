@@ -1,0 +1,33 @@
+.arrowNav {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    color: white;
+    z-index: 40;
+
+    svg {
+        path {
+            fill: white;
+        }
+    }
+}
+
+.header {
+    align-items: center;
+}
+
+.actionBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0;
+
+    > * {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    > :last-child {
+        margin-right: 0;
+    }
+}

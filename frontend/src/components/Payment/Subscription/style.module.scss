@@ -1,0 +1,197 @@
+@import '../../../constants/variables.scss';
+
+.subscriptionWrapper {
+    background-color: #5c6070;
+    height: calc(100vh - 62px);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1400px;
+        height: fit-content;
+        background-color: $white;
+        border-radius: 8px;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .header {
+        display: flex;
+        padding: 20px 0px;
+        background-color: #f7f7f7;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        .section {
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            border-right: 1px solid #c3c3c3;
+            padding: 15px 30px;
+
+            &:last-child {
+                border-right: 0;
+            }
+
+            &.subscription {
+                width: 31%;
+            }
+
+            .status {
+                color: $green;
+                font-size: 17px;
+                font-weight: 600;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0;
+
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .text {
+        color: #555555;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .sectionHeadline {
+        color: $orange;
+        font-size: 19px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .sectionTitle {
+        color: $black;
+        font-size: 30px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+
+        &.small {
+            font-size: 26px;
+        }
+    }
+
+    .buttonsWrap {
+        display: flex;
+        margin: 0 -10px;
+
+        button {
+            margin: 10px;
+        }
+    }
+
+    .subSection {
+        width: 80%;
+        margin-bottom: 20px;
+
+        .subSectionTitle {
+            width: 225px;
+            height: 36px;
+            color: $black;
+            font-size: 21px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            border-bottom: 1px solid #c3c3c3;
+            width: 100%;
+        }
+
+        .subSectionContent {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px;
+        }
+
+        .subSectionItem {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .billingTable {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .billingTableHeader {
+                display: flex;
+                margin-bottom: 15px;
+
+                .td {
+                    color: $orange;
+                }
+            }
+
+            .billingTableContent {
+                display: flex;
+            }
+
+            .td {
+                max-width: 170px;
+                width: 100%;
+                color: $orange;
+                font-size: 17px;
+                font-weight: 600;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: center;
+            }
+
+            .receipt {
+                color: $green;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .noSubscriptionsWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 140px;
+
+        .noSubscriptions {
+            text-align: center;
+            margin: 20px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import 'constants/variables.scss';
+
+.slideshow-wrapper > div:last-child > div:last-child > button {
+    top: -2px !important;
+}
+.salesPage {
+    .App-grid-list {
+        grid-template-columns: 33% 33% 33%;
+
+        @media (max-width: $sm) {
+            grid-template-columns: 100% !important;
+        }
+
+        @media (max-width: $xl) {
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    iframe {
+        height: calc(18vw);
+
+        @media (max-width: $xl) {
+            height: calc(27vw) !important;
+        }
+
+        @media (max-width: $sm) {
+            height: calc(50vw) !important;
+        }
+    }
+}

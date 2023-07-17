@@ -1,0 +1,243 @@
+@import 'variables';
+@import '~react-input-range/lib/css/index.css';
+
+$theme-colors: (
+    'primary': $green,
+    'secondary': $blue-dark,
+);
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: $blue-dark;
+}
+
+h1 {
+    font-size: 28pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+a {
+    text-decoration: none !important;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+// Primary button (for important actions)
+.btn-primary {
+    font-size: 13pt;
+    padding: 4px 9px;
+
+    &:hover:not(.disabled):not(:disabled) {
+        background-color: $orange;
+        border-color: $orange;
+    }
+
+    &.disabled,
+    &:disabled {
+        pointer-events: none;
+    }
+}
+
+// Secondary button Dark (for less common actions, against light background)
+.btn-secondary {
+    font-size: 13pt;
+    padding: 4px 9px;
+    &:hover:not(.disabled):not(:disabled) {
+        background-color: $grey-dark;
+        border-color: $grey-dark;
+    }
+}
+
+// Secondary button Light (for less common actions, against a dark background)
+.btn-light {
+    color: $grey-dark;
+    background-color: $white;
+
+    &:hover {
+        color: $creamy-white;
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $grey-dark;
+        background-color: $white;
+        pointer-events: none;
+    }
+}
+
+// Tertiary button -- Dark (for least common actions, against a light background)
+.btn-tertiary-dark {
+    color: $white;
+    background-color: $grey-blue-black;
+    border-color: $grey-blue-black;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $light-blue-gray !important;
+        border-color: $light-blue-gray !important;
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $white;
+        background-color: $grey-blue-black;
+        border-color: $grey-blue-black;
+        pointer-events: none;
+    }
+}
+
+// Tertiary button -- Light (for least common actions, against a dark background)
+.btn-tertiary-light {
+    color: $grey-dark;
+    background-color: $light-warm-grey;
+    border-color: $light-warm-grey;
+
+    &:hover {
+        color: $grey-dark;
+        background-color: $creamy-white;
+        border-color: $creamy-white;
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $grey-dark;
+        background-color: $light-warm-grey;
+        border-color: $light-warm-grey;
+        pointer-events: none;
+    }
+}
+
+.icon-btn-primary {
+    color: $green;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+.dark-container {
+    background-color: $grey-blue-light;
+    border: none;
+    color: $white;
+}
+
+.dark-grey-container {
+    background-color: $grey-dark;
+    border: none;
+    color: $white;
+}
+
+.light-dark-container {
+    background-color: $grey-blue-black !important;
+    border: none;
+    color: $white;
+}
+
+.dropdown-menu {
+    background-color: $white;
+    color: $grey-dark;
+}
+
+.card {
+    color: $grey-dark;
+    background-color: $white;
+}
+
+.bg-warning {
+    background-color: $orange !important;
+}
+
+.link-button {
+    border-color: $green;
+
+    > * {
+        color: $green;
+    }
+
+    &:hover {
+        background-color: $green;
+        & > * {
+            color: $white;
+        }
+    }
+}
+
+input[type='checkbox']:checked:after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    top: -4px;
+    left: 0px;
+    position: relative;
+    background: $green
+        url('data:image/svg+xml;base64,DQoNCjxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMjAgMjAnPjxwYXRoIGZpbGw9J25vbmUnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBzdHJva2Utd2lkdGg9JzMnIGQ9J002IDEwbDMgM2w2LTYnLz48L3N2Zz4=');
+    display: inline-block;
+    visibility: visible;
+    border-radius: 0.1em;
+}
+
+// for input range
+.input-range {
+    max-width: 500px;
+    width: 100%;
+    padding: 0; // Need to reset padding
+    background-color: transparent;
+    appearance: none;
+    margin-bottom: 15px;
+
+    &__label-container {
+        display: none;
+    }
+
+    &__track {
+        height: 0.5rem;
+        &--active {
+            background: $green;
+        }
+    }
+
+    &__slider {
+        background: $green;
+        border-color: $green;
+        margin-top: -0.75rem;
+    }
+}
+
+.nav-tabs .nav-link.active {
+    color: $green;
+}
+
+.hover-darkBg {
+    &:hover {
+        background-color: $grey-dark;
+    }
+}
+
+.hover-lightBg {
+    &:hover {
+        background-color: $grey-light;
+    }
+}
+
+.hover-opacity {
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.dropdown-item {
+    &:hover {
+        background-color: $creamy-white;
+    }
+}

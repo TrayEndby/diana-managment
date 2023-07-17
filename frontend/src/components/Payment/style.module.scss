@@ -1,0 +1,425 @@
+@import '../../constants/variables.scss';
+
+.wrapper {
+    background-color: #5c6070;
+    padding: 20px 0;
+    height: calc(100vh - 62px);
+    overflow-y: auto;
+
+    .container {
+        display: flex;
+    }
+}
+
+.orderListContainer {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 40px 10px 20px 10px;
+    min-height: 500px;
+
+    .subscriber {
+        width: 25%;
+    }
+
+    .price {
+        width: 25%;
+    }
+
+    .years {
+        width: 35%;
+    }
+
+    .lastPrice {
+        width: 15%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f4f4f4;
+        padding: 0 10px 5px;
+
+        .headerItem {
+            color: $black;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: center;
+            padding: 0 15px;
+
+            &:nth-child(1) {
+                text-align: left;
+            }
+        }
+    }
+
+    .orderList {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid $grey;
+
+        .orderItem {
+            display: flex;
+            margin: 10px 0;
+            padding: 0 10px;
+            border-bottom: 1px solid#F4F4F4;
+            position: relative;
+
+            &:first-child {
+                border-bottom: 0;
+            }
+
+            &.primaryItem {
+                background-color: #f7f7f7;
+            }
+
+            &.payed {
+                pointer-events: none;
+                opacity: 0.5;
+            }
+        }
+
+        .orderItemBlock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            padding: 10px 15px;
+
+            &:nth-child(1) {
+                align-items: flex-start;
+
+                .hint {
+                    text-align: left;
+                }
+            }
+        }
+
+        .orderItemNameWrap {
+            padding: 5px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name {
+            color: $black;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+
+        .email {
+            color: #7b7b7b;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+
+        .discountAmount {
+            color: $red;
+            font-size: 16px;
+        }
+
+        .hintWrap {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 0;
+
+            &.primary {
+                border-top: 1px solid $grey;
+            }
+        }
+        .hint {
+            color: $orange;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1;
+
+            &.green {
+                color: $green;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1;
+            }
+        }
+
+        .hintPrimaryHolder {
+            color: green;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+
+        .yearsSelect {
+            width: 70px;
+            height: 30px;
+            color: #2f2f2f;
+            font-size: 18px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            border: 1px solid #2f2f2f;
+            padding: 0 5px;
+            border-radius: 2px;
+        }
+
+        .nameSelect {
+            border: 1px solid #2f2f2f;
+            padding: 0 5px;
+            height: 30px;
+            border-radius: 2px;
+
+            & > div {
+                margin: 0;
+            }
+        }
+
+        .addOrderItem {
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            cursor: pointer;
+            margin: 25px;
+
+            &.disabled {
+                pointer-events: none;
+                opacity: 0.5;
+            }
+
+            span {
+                color: $green;
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+
+        .free {
+            color: $green;
+        }
+
+        .removeItem {
+            position: absolute;
+            position: absolute;
+            right: 10px;
+            top: -5px;
+            cursor: pointer;
+        }
+    }
+
+    .childInfo {
+        font-size: 16px;
+        margin: 3px;
+    }
+
+    .subtotalContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+
+        .subtotal {
+            color: $green;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .amount {
+            margin-left: 40px;
+            color: $black;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+    }
+}
+
+.orderSummaryContainer {
+    background-color: $light-warm-grey;
+    padding: 30px;
+
+    .title {
+        color: $black;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .promoContainer {
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $grey;
+        flex-direction: column;
+
+        .formGroup {
+            display: flex;
+        }
+
+        .promoInput {
+            border: none;
+            margin-right: 10px;
+            text-transform: uppercase;
+
+            &::placeholder {
+                text-transform: initial;
+            }
+        }
+
+        .promoCodeStatus {
+            font-size: 16px;
+            margin: 0;
+
+            &.success {
+                color: $green;
+            }
+
+            &.error {
+                color: $red;
+            }
+        }
+
+        .acceptedContainer {
+            display: flex;
+            flex-direction: column;
+            margin: 5px -5px;
+
+            .acceptedCodeBox {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 5px;
+
+                .acceptedCode {
+                    display: flex;
+                    align-items: center;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: normal;
+                    text-align: left;
+                    text-transform: uppercase;
+                    background-color: #c9c9c9;
+                    padding: 5px;
+
+                    svg {
+                        margin-left: 5px;
+                        cursor: pointer;
+                    }
+                }
+
+                .acceptedCodeMsg {
+                    color: $green;
+                    font-size: 16px;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+
+    .textRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0;
+
+        &.textBold {
+            span {
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+
+        span {
+            color: #484848;
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+        }
+
+        .amount {
+            font-size: 18px;
+        }
+
+        .amountWithPromo {
+            color: $red;
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+
+    .proceedCheckout {
+        width: 100%;
+        margin: 10px 0;
+        height: 50px;
+    }
+
+    .discountContainer {
+        border-bottom: 1px solid $grey;
+    }
+
+    .agreementContainer {
+        margin: 20px 0;
+        .text {
+            color: #484848;
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+        }
+    }
+
+    .link {
+        color: $green;
+        font-weight: 700;
+    }
+}

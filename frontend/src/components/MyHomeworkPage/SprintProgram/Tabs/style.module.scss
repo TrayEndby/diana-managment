@@ -1,0 +1,22 @@
+@import 'constants/variables.scss';
+
+.title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: $grey-blue-black;
+    height: 36px;
+    font-size: 17px;
+
+    > div {
+        width: 50%;
+
+        a {
+            color: $white;
+
+            &.selected {
+                color: $green;
+            }
+        }
+    }
+}

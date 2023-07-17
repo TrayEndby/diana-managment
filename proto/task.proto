@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package ai.kyros.diana.service.task;
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+
+// User ID is passed in via context.
+
+message Task {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  google.protobuf.Duration duration = 4;
+  google.protobuf.Timestamp due = 5;
+  float done_ratio = 6;
+}
+
+message Request {
+  enum Mode {
+    LIST = 0;
+    ADD = 1;
+    UPDATE = 2;
+    DELETE = 3;
+    SHARE = 4;
+    UNCLAIM = 5;
+  }
+	Mode mode = 1;
+  Task task = 2;
+  repeated string options = 3;
+}
+
+message Response {
+  int32 status = 1;
+  string debug = 2;
+  repeated Task tasks = 3;
+}

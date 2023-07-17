@@ -1,0 +1,94 @@
+@import '../../../constants/variables.scss';
+
+.profileCard {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.leftCard {
+    background-color: $blue-dark;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height:150px;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .content {
+        height: 100%;
+        align-self: center;
+        margin: 0;
+    }
+}
+
+.rightCard {
+    background-color: #e9e9e9;
+    color: #393c46;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(50px) fit-content(0) 1fr fit-content(41px) fit-content(16px);
+    grid-row-gap: 1rem;
+    flex: 1 1 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.link {
+    margin-top: auto;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > * {
+            margin-right: 1rem;
+            margin-top: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @media (max-width: 864px) {
+        flex-direction: column-reverse;
+
+        > div {
+            margin-bottom: 1rem;
+
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.progressBar {
+    border: 1px solid $grey-light;
+}

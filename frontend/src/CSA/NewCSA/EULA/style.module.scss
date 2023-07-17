@@ -1,0 +1,55 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-color: white;
+    color: black;
+    .rectangleContainer {
+        background-color: $blue-dark;
+        color: $white;
+        width: 100%;
+        font-size: 16px;
+        flex-direction: row;
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        border: 3px black solid;
+        border-radius: 5px;
+    }
+
+    .secondContainer {
+        width: 100%;
+        border-color: $black;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 10px;
+        border-style: solid;
+        margin-top: 30px;
+    }
+
+    .itemContainer {
+        margin-top: 24px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .link {
+        float: left;
+        font-size: 48px;
+        margin-top: -16px;
+    }
+    .list {
+        list-style: none;
+    }
+    .WebinarButton {
+        margin-top: 30px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: $orange;
+        border-style: solid;
+        padding: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: $orange;
+    }
+}

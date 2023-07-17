@@ -1,0 +1,208 @@
+@import '../../../../constants/variables.scss';
+
+.exploreBtn {
+    margin: 10px 0;
+}
+
+.mainContainer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid $grey;
+    box-shadow: -7px 12px 12px -6px #000;
+    margin: 0 auto 40px;
+
+    textarea {
+        resize: none;
+        height: 60px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        padding: 0;
+
+        .image {
+            height: 335px;
+            width: 50%;
+            background-color: $grey-dark;
+            color: $white;
+            border-radius: 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+
+            input {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                // height: 100%;
+                padding: 10px;
+            }
+        }
+
+        .mainInfo {
+            min-height: 335px;
+            width: 50%;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+
+                .tagsPanel {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .tagsItem {
+                    width: fit-content;
+                    height: fit-content;
+                    margin: 0 10px 5px 0;
+                }
+
+                .tagsStyle {
+                    padding: 3px 10px;
+                    background-color: $grey-dark;
+                    border: 0;
+                    color: white;
+
+                    > button {
+                        color: white;
+                        text-shadow: none;
+                        font-size: 1rem;
+                        opacity: 1;
+                    }
+
+                    > button:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .categories {
+                justify-content: space-between;
+                flex-direction: column;
+
+                .inputPanel {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    > div {
+                        width: 35%;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0;
+    
+                        .dropdown {
+                            > div {
+                                max-height: 400px;
+                                overflow: auto;
+                            }
+    
+                            .dropdownButton {
+                                max-width: 280px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                    > input {
+                        border: 1px solid #ced4da;;
+                        border-radius: 0.25rem;
+                        width: 25%;
+                        height: 38px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.secondaryContainer {
+    border-radius: 0.4rem;
+    display: flex;
+    width: 80%;
+    margin: 0 auto 40px;
+    border: none;
+    box-shadow: -7px 12px 12px -6px #000;
+
+    .header {
+        border-radius: 0.4rem 0.4rem 0 0;
+        color: $white;
+        background-color: $grey-blue-light;
+    }
+
+    .details {
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 200px;
+        }
+    }
+}
+
+.submitBlock {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+    :first-child {
+        margin-right: 10px;
+    }
+}
+
+.modalContent {
+    padding: 30px;
+}
+
+.modalTitle {
+    text-align: center;
+}
+
+.modalButton {
+    width: 150px;
+    margin: 0 20px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .mainContainer {
+        .row {
+            flex-direction: column;
+
+            .image,
+            .mainInfo {
+                width: 100%;
+            }
+        }
+    }
+}

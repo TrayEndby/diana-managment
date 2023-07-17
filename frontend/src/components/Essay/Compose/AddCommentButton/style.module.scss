@@ -1,0 +1,30 @@
+@import '../../../../constants/variables.scss';
+
+.add {
+    z-index: 40;
+
+    svg {
+        color: $blue-dark;
+    }
+
+    > div {
+        background-color: $blue-dark;
+        border-radius: 5px;
+        color: $white;
+        font-size: 0.8rem;
+        width: 100px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        position: relative;
+        top: -6px;
+        left: -45px;
+        cursor: pointer;
+    }
+
+    &.left {
+        > div {
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.container {
+  background-image: url('../../assets/Landing/LeadFormBg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 5rem;
+}
+
+.left {
+  display: flex;
+  flex: 0 0 47%;
+
+  > div {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.right {
+  height: 100%;
+  flex: 0 0 53%;
+}

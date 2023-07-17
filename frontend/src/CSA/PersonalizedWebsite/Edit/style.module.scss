@@ -1,0 +1,17 @@
+@import 'constants/variables.scss';
+
+.button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: $grey-light;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    svg {
+        margin: auto;
+    }
+}

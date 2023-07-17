@@ -1,0 +1,80 @@
+@import '../../../constants/variables.scss';
+
+.servicesWrap {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.servicesTitle {
+    color: $green;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.servicesHeader {
+    display: flex;
+    align-items: center;
+}
+
+.servicesList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px -10px;
+}
+
+.serviceAdd {
+    cursor: pointer;
+}
+
+.addDisabled {
+    pointer-events: none;
+    svg {
+        opacity: 0.5;
+    }
+}
+
+.serviceItem {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $green;
+    border-radius: 4px;
+    padding: 8px;
+    max-width: 250px;
+    width: 100%;
+    margin: 10px;
+    position: relative;
+
+    .closeButton {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+}
+
+.serviceItemRow {
+    display: flex;
+}
+
+.serviceItemInfo {
+    margin: 0 0 0 5px;
+    font-size: 16px;
+    color: $black;
+    font-weight: 600;
+}
+
+.serviceItemHint {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.serviceItemDesc {
+    flex-direction: column;
+
+    .serviceItemInfo {
+        margin-left: 0;
+    }
+}

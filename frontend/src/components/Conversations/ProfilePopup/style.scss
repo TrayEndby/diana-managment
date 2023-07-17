@@ -1,0 +1,64 @@
+@import 'constants/variables.scss';
+
+.conversation-user-popup {
+    width: 241px;
+    height: 272px;
+    border-radius: 5px !important;
+    border: 1px solid rgba(112, 112, 112, 0.44);
+    background-color: $white;
+
+    &.hide {
+        display: none;
+    }
+
+    &__img {
+        height: 140px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & ~ .modal {
+        z-index: 1200 !important;
+    }
+
+    .popover-header {
+        color: $black;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align-last: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__view-full {
+        height: 15px;
+        color: #186dc3;
+        font-size: 11px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -5px;
+        button {
+            margin: 5px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+    }
+
+    .popover-body {
+        display: flex;
+        flex-direction: column;
+    }
+}

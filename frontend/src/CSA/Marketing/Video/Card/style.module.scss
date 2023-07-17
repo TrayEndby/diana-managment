@@ -1,0 +1,33 @@
+@import 'constants/variables.scss';
+
+.video {
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    h6 {
+        color: $green !important;
+        margin-bottom: 0.2rem;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .top {
+        height: 12vw;
+        @media (max-width: $md) {
+            height: 22vw;
+        }
+        @media (max-width: $sm) {
+            height: 43vw;
+        }
+    }
+}
+
+.thumbnail {
+    cursor: pointer;
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid black;
+}

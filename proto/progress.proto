@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package ai.kyros.diana.service.progress;
+
+// User ID is passed in via context.
+
+enum Type {
+  COURSE = 0;
+  PROJECT = 1;
+}
+
+message Progress {
+  Type type = 1;
+  int32 id = 2;
+  string name = 3;
+  float done_ratio  = 4;
+}
+
+// Get a list of item progresses.
+message Request {
+  repeated Type type = 1;  // By a list of types.
+  string name = 2;  // Or by a specific name.
+  repeated string options = 3;
+}
+
+message Response {
+  int32 status = 1;
+  string debug = 2;
+  repeated Progress progresses = 3;
+}

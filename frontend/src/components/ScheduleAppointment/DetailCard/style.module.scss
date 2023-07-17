@@ -1,0 +1,30 @@
+@import 'constants/variables.scss';
+
+.time {
+    font-size: 20px;
+    font-weight: bold;
+    color: $green;
+    margin: 0 auto 1rem auto;
+}
+
+.form {
+    width: 60%;
+    margin: 1rem auto 0 auto;
+
+    @media (max-width: $sm) {
+        width: 95%;
+    }
+
+    @media (max-width: $md) {
+        width: 75%;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    button {
+        margin: 2rem auto;
+        display: flex;
+    }
+}

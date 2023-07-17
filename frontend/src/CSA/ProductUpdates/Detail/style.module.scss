@@ -1,0 +1,33 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-color: $grey;
+
+    .mainDiv {
+        background-color: $white;
+        padding-top: 8px;
+        width: 68%;
+        margin-left: 1%;
+        margin-top: 1%;
+        height: 97%;
+        border-radius: 5px;
+        float: left;
+    }
+
+    .rightDiv {
+        background-color: $white;
+        padding: 28px 20px 28px 20px;
+        padding-left: 20px;
+        width: 29%;
+        margin-top: 1%;
+        margin-left: 1%;
+        border-radius: 5px;
+        float: left;
+    }
+
+    .link {
+        float: left;
+        font-size: 48px;
+        margin-top: -16px;
+    }
+}

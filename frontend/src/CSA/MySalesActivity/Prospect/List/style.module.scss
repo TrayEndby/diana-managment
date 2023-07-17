@@ -1,0 +1,34 @@
+@import 'constants/variables.scss';
+
+.listContainer {
+    background-color: white;
+    height: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h5 {
+        margin-bottom: 0;
+        margin-left: 0.5rem;
+        margin-right: auto;
+        font-weight: 600;
+    }
+
+    .search {
+        input {
+            // border-radius: 20px;
+        }
+    }
+
+    button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1rem;
+    }
+}

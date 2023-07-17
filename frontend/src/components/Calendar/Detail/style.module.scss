@@ -1,0 +1,77 @@
+@import '../../../constants/variables.scss';
+
+$icon-w: 20px;
+$icon-margin: 10px;
+$icon-total-w: $icon-w + $icon-margin;
+
+.header {
+    align-items: center;
+
+    :global(.close) {
+        margin-left: 0;
+    }
+}
+
+.inviteeAction {
+    justify-content: flex-start;
+    padding-left: $icon-total-w + 16px;
+
+    > button {
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    :global(.btn-light) {
+        background-color: $grey-light;
+        color: $white;
+
+        &:hover {
+            background-color: $grey;
+        }
+    }
+}
+
+.form {
+    .title {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    div.title {
+        padding-left: $icon-total-w;
+    }
+
+    :global(.form-group) {
+        display: flex;
+        flex-direction: row;
+        
+        > svg {
+            flex: 0 0 $icon-w;
+            width: $icon-w;
+            height: $icon-w;
+            color: $grey;
+            margin-right: $icon-margin;
+        }
+    }
+
+    .flag {
+        width: 100px;
+    }
+}
+
+form.form {
+    :global(.form-group) {
+        > svg {
+            position: relative;
+            top: 8px;
+        }
+    }
+}

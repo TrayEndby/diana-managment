@@ -1,0 +1,102 @@
+@import '../../../../../constants/variables.scss';
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.projectItem {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgba(112, 112, 112, 0.49);
+    background-color: $white;
+    flex-direction: column;
+    max-width: 175px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.imageContainer {
+    img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 12px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.editContainer {
+    svg {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.title {
+    color: $black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    width: 80%;
+    word-break: break-word;
+}
+
+.link {
+    margin-bottom: 0;
+
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
+.description {
+    max-height: 70px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.uploadContainer {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.uploadedImg {
+    width: 139px;
+    height: 112px;
+    border-radius: 10px;
+    border: 1px solid $asphalt-black;
+    background-color: $white;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    div[role='status'] {
+        left: 40%;
+        top: 35%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

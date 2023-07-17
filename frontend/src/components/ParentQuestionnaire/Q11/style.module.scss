@@ -1,0 +1,31 @@
+@import '../../../constants/variables.scss';
+
+.promoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .formGroup {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .promoCodeStatus {
+        font-size: 16px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 2px;
+        }
+
+        &.success {
+            color: $green;
+        }
+
+        &.error {
+            color: $red;
+        }
+    }
+}

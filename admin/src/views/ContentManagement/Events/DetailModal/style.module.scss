@@ -1,0 +1,12 @@
+@import "constants/variables.scss";
+
+:global(label) {
+  color: $orange;
+  font-size: 17px;
+}
+
+.splitter {
+  width: 98%;
+  height: 1px;
+  background-color: $grey-light;
+}

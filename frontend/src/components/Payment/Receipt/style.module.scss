@@ -1,0 +1,158 @@
+@import '../../../constants/variables.scss';
+
+@media print {
+  .printNone {
+    display: none;
+  }
+}
+
+.page {
+    background-color: $grey-blue-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px 50px;
+}
+
+.receiptContainer {
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px 0;
+    }
+
+    .headline {
+        color: $orange;
+        font-size: 30px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 0.64px;
+        line-height: normal;
+        text-align: left;
+    }
+
+    section {
+        background-color: white;
+        padding: 15px 45px;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 95%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 1px;
+            transform: translateX(-50%);
+            background-color: $grey-light;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.4px;
+        line-height: normal;
+    }
+
+    .blockTitle {
+        color: $orange;
+        font-size: 23px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 0.45px;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .headSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 160px;
+        background: white url('../../../assets/CSA/wave-header.svg');
+        -webkit-print-color-adjust: exact;
+        background-repeat: no-repeat;
+        background-position: 0% -1%;
+        background-size: 100%;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+        .headSectionCred {
+            display: flex;
+            justify-content: space-between;
+
+            .headLeftTitle {
+                color: $black;
+                font-size: 25px;
+                font-weight: 800;
+                font-style: normal;
+            }
+        }
+    }
+
+    .descriptionSection {
+        display: flex;
+        justify-content: space-between;
+
+        .descriptionPart {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricePart {
+            width: 400px;
+
+            .blockTitle {
+                text-align: right;
+            }
+
+            .priceRow {
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                span {
+                    &.subtotal {
+                        color: $black;
+                        font-size: 22px;
+                        font-weight: 300;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: normal;
+                        text-align: left;
+                    }
+
+                    &.discount {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    .totalSection {
+        display: flex;
+        justify-content: flex-end;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding-bottom: 20px;
+
+        .totalWrap {
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+}

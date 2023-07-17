@@ -1,0 +1,35 @@
+@import 'constants/variables.scss';
+
+.navbar {
+    padding-top: 0.5rem;
+}
+
+.sprints {
+    margin-bottom: 0.5rem;
+
+    :global(.card-header) {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.programs {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        margin-bottom: 0.5rem;
+        color: $white;
+        font-size: 15px;
+
+        &.active {
+            background-color: $grey-blue-black;
+        }
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}

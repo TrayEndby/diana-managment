@@ -1,0 +1,71 @@
+@import '../../constants/variables.scss';
+#userSetting-dropdown {
+    color: white;
+    right: 0px;
+    left: auto;
+    position: relative;
+
+    &:hover {
+        background-color: $grey-dark;
+    }
+}
+#notification-center-dropdown {
+    color: white;
+
+    & + .dropdown-menu {
+        transform: translateX(50%);
+
+        @media (min-width: $sm) {
+            transform: none;
+        }
+    }
+}
+
+#logInSetting-dropdown {
+    color:white;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+
+    &:hover {
+        color:$green;
+    }
+}
+#logInSetting-dropdown:after {
+    content:none;
+}
+
+#SignUpSetting-dropdown {
+    color:white;
+    background-color: $green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    
+    &:hover {
+        background-color: #468a3c;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #userSetting-dropdown {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #logInSetting-dropdown  {
+        font-size:11px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin:0px;
+    }
+    #SignUpSetting-dropdown {
+        font-size:11px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0px;
+    }
+
+}

@@ -1,0 +1,54 @@
+@import 'constants/variables.scss';
+
+.allContactsContainer {
+    max-height: calc(55px * 5);
+    overflow: auto;
+}
+
+.contactItem {
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.disabled {
+        background-color: $grey-light;
+        cursor: not-allowed;
+    }
+
+    p {
+        margin: 0;
+        line-height: 14px;
+        height: 14px;
+    }
+}
+
+.chosenContactContainer {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.chosenContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    flex: 0 0 auto;
+    height: 50px;
+}
+
+.button {
+    margin-top: 1rem;
+}

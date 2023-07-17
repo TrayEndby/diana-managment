@@ -1,0 +1,50 @@
+$darkBlue: #173656;
+$blue: #2F87CB;
+$orange: #F78154;
+
+.legend {
+  width: 25px;
+  height: 25px;
+  background-color: $darkBlue;
+  border-radius: 6px;
+  border: 3px solid white;
+
+  &:global(.blue) {
+      background-color: $blue;
+  }
+
+  &:global(.orange) {
+      background-color: $orange;
+  }
+}
+
+.legends {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    > span {
+      margin-left: 1rem;
+    }
+  }
+
+  .stats {
+    margin-top: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+  }
+}

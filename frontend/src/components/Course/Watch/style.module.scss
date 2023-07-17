@@ -1,0 +1,92 @@
+@import '../../../constants/variables.scss';
+
+$right-section-x-margin: 15px;
+$backButton-h: 30px;
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $lg) {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .leftSection {
+        flex: 0 0 70%;
+
+        .leftTop {
+            height: 78%;
+        }
+
+        .leftBottom {
+            height: 22%;
+            max-height: 22%; // safari fix
+            overflow: scroll;
+            padding: 8px 23px;
+            background-color: white;
+            border: 1px solid $grey-light;
+
+            @media (min-width: $lg) {
+                padding: 16px 48px;
+            }
+        }
+    }
+
+    .rightSection {
+        flex: 0 0 30%;
+        background-color: $blue-dark;
+        color: white;
+    }
+}
+
+.videoSection {
+    width: 100%;
+    height: 100%;
+
+    .video {
+        width: 96%;
+        height: calc(100% - 10px);
+        border: none;
+        display: block;
+        margin: 3px auto;
+    }
+}
+
+.backButton {
+    height: $backButton-h;
+    margin-left: $right-section-x-margin;
+    margin-bottom: 8px;
+    padding: 0 9px;
+}
+
+.tabSection {
+    $tab-h: 30px;
+    height: calc(100% - #{$backButton-h});
+
+    .tabs {
+        height: $tab-h;
+        border-bottom: 1px solid $grey-light;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tab {
+        cursor: pointer;
+        font-size: 1.2em;
+        margin: 0 $right-section-x-margin;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .activeTab {
+        font-weight: bold;
+    }
+
+    .tabContent {
+        height: calc(100% - #{$tab-h});
+        overflow-y: auto;
+    }
+}

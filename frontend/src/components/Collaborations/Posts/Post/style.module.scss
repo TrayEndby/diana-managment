@@ -1,0 +1,25 @@
+@import '../../../../constants/variables.scss';
+
+.container {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.header {
+    height: 60px;
+    background-color: $grey-blue-light;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 $padding-x;
+}
+
+.content {
+    background-color: white;
+    padding: $padding-x;
+
+    h5 {
+        margin-bottom: 20px;
+    }
+}

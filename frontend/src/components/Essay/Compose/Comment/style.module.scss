@@ -1,0 +1,41 @@
+@import 'constants/variables.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &.selected {
+        background-color: yellow;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+
+    .picture {
+        margin-right: 0.5rem;
+    }
+
+    .name {
+        font-weight: 700;
+    }
+    
+    .time {
+        color: $grey;
+    }
+
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+}
+
+.bottom {
+    margin-top: 1rem;
+    
+    button {
+        margin-right: 1rem;
+    }
+}

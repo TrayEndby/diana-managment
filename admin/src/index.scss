@@ -1,0 +1,65 @@
+@import "constants/variables.scss";
+
+.c-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logoImg {
+  width: 40px;
+  margin-left: -15px;
+}
+
+.logoText {
+  font-style: italic;
+  margin-left: 12px;
+}
+
+.c-sidebar-brand {
+  background-color: $black-dark !important;
+}
+
+.c-sidebar-nav {
+  background-color: $blue-dark;
+  padding: 12px;
+  padding-top: 32px;
+}
+
+.c-sidebar .c-active {
+  background-color: transparent !important;
+  color: $orange !important;
+}
+
+.c-sidebar-nav-link {
+  overflow: hidden;
+  padding-left: 16px !important;
+  &.c-active {
+    color: $white !important;
+    background-color: $grey-dark !important;
+  }
+}
+
+.c-sidebar-nav-link:hover{
+  background: $grey-dark !important;
+}
+
+.c-sidebar-nav-dropdown-items {
+  margin-left: -20px !important;
+  .c-sidebar-nav-item {
+    margin-left: 40px !important;
+  }
+}
+
+.c-sidebar-nav-dropdown-toggle{
+  margin-top: 12px !important;
+  color: $orange !important;
+}
+
+.c-sidebar-nav-dropdown-toggle:hover {
+  background: $grey-dark !important;
+}
+
+.c-sidebar-nav-dropdown {
+  background-color: transparent !important;
+}
+

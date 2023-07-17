@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="56.002" viewBox="0 0 64 56.002">
+  <g id="My_Conversation" data-name="My Conversation" transform="translate(0 -12.271)">
+    <path id="Path_1723" data-name="Path 1723" d="M61.279,35.314c0,12.724-13.716,23.034-30.64,23.034A38.826,38.826,0,0,1,17.167,56C7.531,62.991.692,60.425.692,60.425a19.76,19.76,0,0,0,7.36-9.543C3.05,46.784,0,41.321,0,35.314,0,22.581,13.716,12.271,30.64,12.271s30.639,10.31,30.639,23.043Z" fill="#e9e9e9"/>
+    <path id="Path_1727" data-name="Path 1727" d="M140.13,202.509c0,8.512,9.176,15.409,20.5,15.409a25.97,25.97,0,0,0,9.012-1.571c6.447,4.676,11.022,2.96,11.022,2.96a13.219,13.219,0,0,1-4.926-6.384,13.528,13.528,0,0,0,5.389-10.414c0-8.518-9.176-15.415-20.5-15.415S140.13,193.99,140.13,202.509Z" transform="translate(-117.124 -151.341)" fill="#53a548"/>
+    <circle id="Ellipse_1321" data-name="Ellipse 1321" cx="2.905" cy="2.905" r="2.905" transform="translate(49.739 48.867)" fill="#eeefee"/>
+    <circle id="Ellipse_1322" data-name="Ellipse 1322" cx="2.905" cy="2.905" r="2.905" transform="translate(40.362 48.867)" fill="#eeefee"/>
+    <circle id="Ellipse_1323" data-name="Ellipse 1323" cx="2.905" cy="2.905" r="2.905" transform="translate(30.984 48.867)" fill="#eeefee"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+@import 'constants/variables.scss';
+
+.container {
+    width: 350px;
+
+    &.nested {
+        width: 100%;
+    }
+
+    .header {
+        margin: 0 8px;
+        padding-left: 16px;
+    }
+}
+
+.header {
+    border-bottom: 1px solid $grey-light;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    padding: 0 $padding-x;
+
+    span {
+        margin-left: auto;
+        font-size: 12px;
+        font-weight: bold;
+        color: $orange;
+        cursor: pointer;
+    }
+}

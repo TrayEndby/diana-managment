@@ -1,0 +1,11 @@
+export const STORAGE_USERPROFILE_PROGRESS = 'kyros-userprofile-progress';
+export const STORAGE_USERPROFILE_FINISHED = 'kyros-userprofile-finished';
+export const STORAGE_COLLEGE_SEARCH = 'kyros-CollegeSearchBoard-Search-Value';
+export const STORAGE_COLLEGE_SEARCH_SAVED = 'kyros-SavedFiltersModal_SAVED_SEARCHES';
+export const STORAGE_FIN_AID_SEARCH = 'kyros-FinAidSearchBoard-Search-Value';
+export const STORAGE_FIN_AID_SEARCH_SAVED = 'kyros-FinAidSavedFiltersModal_SAVED_SEARCHES';
+export const STORAGE_SIGN_IN_TYPE = 'kyros-sign-in-type';
+export const STORAGE_READED_MSG_TIMESTAMP = 'kyros-readed-msg-timestamp';
+export const STORAGE_CONVERSATION_CHANNELS = 'kyros-conversation-channels';
+export const STORAGE_CONVERSATION_SELECTED = 'kyros-conversation-selected';
+export const STORAGE_SPRINT_REGISTRATION = 'kyros-sprint-registration';

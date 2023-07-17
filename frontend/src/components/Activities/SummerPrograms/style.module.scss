@@ -1,0 +1,116 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-color: $grey-blue-black;
+    border-radius: 0;
+    border: none;
+    display: grid;
+    grid-template-rows: fit-content(0) fit-content(0) auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+
+    table {
+        background-color: $white;
+        margin: 0 auto;
+
+        thead {
+            background-color: $grey-blue-black;
+            color: $white;
+
+            th {
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .addButton {
+        position: absolute;
+        right: 0;
+        text-align: right;
+        margin-top: -52px;
+        margin-bottom: 25px;
+
+        @media (max-width: 1327px) {
+            position: initial;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 16px;
+        }
+    }
+
+    :global(.form-check) {
+        margin-bottom: 12px;
+    }
+}
+
+.topBar {
+    height: 70px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.searchBar {
+    display: flex;
+    border: 1px solid $grey;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 24px;
+    background-color: $white;
+    width: 650px;
+    max-height: 36px;
+}
+
+.searchText {
+    width: 90%;
+    height: 18px;
+    border-width: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.searchDiv {
+    width: 660px;
+    height: 620px;
+    position: absolute;
+    top: 53px;
+    z-index: 10;
+    margin-left: -18px;
+    background-color: $white;
+    border: solid 1px $grey;
+    padding: 12px;
+}
+
+.expandDiv {
+    width: 36px;
+    height: 36px;
+    margin-left: -13px;
+    background-color: rgb(247, 129, 84);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 98%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 1%;
+    background-color: $grey-light;
+    height: 1px;
+}
+
+.downCaret {
+    fill: $white;
+    width: 25px;
+    height: 25px;
+    margin-left: 4px;
+    margin-top: 6px;
+}

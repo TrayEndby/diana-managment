@@ -1,0 +1,115 @@
+@import '../../../constants/variables.scss';
+
+.audioContainer {
+    width: 100%;
+    flex: 0 0 65px;
+    background-color: #78828B;
+    margin-top: auto;
+    padding: 5px 0;
+
+    audio {
+        display: none;
+        // width: 100%;
+    }
+}
+
+.audioWidgets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    margin: 0 20px;
+    height: 100%;
+
+    .controls {
+        .play {
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            border: 4px solid $btn-bg;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &:hover {
+                border-color: $grey-light;
+
+                svg {
+                    fill: $grey-light;
+                }
+            }
+
+            svg {
+                margin: auto;
+                fill: $btn-bg;
+            }
+        }
+    }
+
+    .infos {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+
+        h6 {
+            margin-bottom: 4px;
+        }
+
+        .tracks {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .time {
+                margin-left: 10px;
+            }
+        }
+
+        .progress {
+            flex: 1 1 auto;
+        }
+    }
+
+    .volume {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &:hover {
+            .progress {
+                width: 100px;
+            }
+        }
+
+        .progress {
+            margin: 0 10px;
+            width: 0;
+            transition: width 0.3s;
+        }
+
+        svg {
+            margin: 0 auto;
+        }
+    }
+}
+
+.progress {
+    background-color: $asphalt-grey;
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        height: 8px;
+    }
+
+    .progressBar {
+        background-color: $grey-light;
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../../../constants/variables.scss';
+
+.section {
+    width: 100%;
+    margin: 8px auto;
+
+    > div {
+        min-height: 100px;
+        padding: $padding-x;
+    }
+}

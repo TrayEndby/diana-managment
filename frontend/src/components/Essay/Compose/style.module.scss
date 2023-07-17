@@ -1,0 +1,67 @@
+@import '../../../constants/variables.scss';
+
+$header-h: 50px;
+$tool-bar-h: 50px;
+
+.wrapper {
+    background-color: $light-blue-gray;
+}
+
+.header {
+    height: $header-h;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1.5rem;
+    background-color: white;
+
+    .title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: black;
+        // width: fit-content;
+        padding-left: 1rem;
+        margin-right: 0.5rem;
+        border-radius: 0;
+    }
+
+    .status, button {
+        margin-left: 5px;
+    }
+}
+
+.container {
+    height: calc(100% - #{$header-h});
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+    .writing {
+        flex: 1 1 auto;
+
+        :global(.quill) {
+            height: 100%;
+        }
+
+        // :global(.ql-toolbar) {
+        //     height: $tool-bar-h;
+        // }
+    
+        :global(.ql-container) {
+            min-height: 90vh;
+        }
+
+        :global(.ql-tooltip[data-mode="link"]) {
+            z-index: 41;
+        }
+    }
+
+    .comments {
+        flex: 0 0 30%;
+
+        > div {
+            margin: 1rem;
+            padding: 1rem;
+        }
+    }
+}

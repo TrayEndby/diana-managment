@@ -1,0 +1,128 @@
+@import '../../constants/variables.scss';
+
+.product-container {
+    background-color: $light-warm-grey;
+}
+
+.hero-container {
+    background-image: url('../../assets/brochures/product-head-bg.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .hero-logo {
+        background-image: url('../../assets/brochures/logo.svg');
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+    }
+
+    .hero-url {
+        flex: 1;
+        text-align: right;
+
+        a {
+            font-size: 20px;
+            color: $white;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+    }
+
+    .hero-details {
+        background-image: url('../../assets/brochures/product-head-text.svg');
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 500px;
+        background-size: contain;
+    }
+}
+
+.product-info {
+    padding: 0 100px;
+
+    h2 {
+        color: $orange;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        width: 800px;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 16px 0;
+        }
+    }
+
+    ul li::before {
+        content: '\2022';
+        color: $orange;
+        font-weight: bold;
+        display: inline-block;
+        width: 20px;
+        margin-left: -25px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.highlight {
+    color: $orange;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/brochures/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 100px 0 100px;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+
+    .footer-logo {
+        background-image: url('../../assets/brochures/logo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 150px;
+        width: 150px;
+    }
+
+    .footer-learn-more {
+        background-image: url('../../assets/brochures/learn-more.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 500px;
+        height: 100px;
+        flex: 1;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        color: $white;
+        font-size: 18px;
+        padding-bottom: 16px;
+    }
+}

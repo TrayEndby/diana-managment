@@ -1,0 +1,133 @@
+@import 'constants/variables.scss';
+
+.agreementPage {
+    background-color: $light-warm-grey;
+    padding-bottom: 18px;
+
+    .container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .flexItem {
+        display: flex;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .splitter {
+        background-color: $light-warm-grey;
+        height: 120px;
+        margin-top: 10px;
+        width: 2px;
+    }
+
+    .headerImage {
+        width: 100vw;
+        margin-left: -16px;
+        height: 260px;
+    }
+
+    .maskRectangle {
+        width: 440px;
+        height: 220px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        margin-top: -240px;
+    }
+
+    .headerTextDiv {
+        margin-top: -200px;
+        position: relative;
+        margin-left: 80px;
+        font-weight: bold;
+    }
+
+    .headerText1 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .headerText2 {
+        font-size: 24px;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .RSVPButton {
+        width: 80px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .contentDiv {
+        margin-top: 54px;
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    .contentHeader {
+        background-color: black;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+
+    .formSelect {
+        width: 15%;
+        margin-right: 3%;
+    }
+
+    .splitter {
+        background-color: $grey;
+        height: 1px;
+        width: 100%;
+    }
+
+    .scheduleItem {
+        width: 90%;
+        margin-left: 5%;
+        padding: 10px 20px 0px 20px;
+        height: fit-content;
+    }
+
+    .agreementImage {
+        width: 500px;
+        margin-right: 40px;
+        float: left;
+    }
+
+    .scheduleTitle {
+        color: $green;
+        margin-top: 12px;
+        font-size: 18pt;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+
+    .readmore {
+        text-align: center;
+        border: 1px solid green;
+        border-radius: 8px;
+        color: green;
+        padding: 2px 35px;
+        cursor: pointer;
+    }
+
+    h6 {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 630px) {
+        .agreementImage {
+            width: 100%;
+        }
+    }
+}

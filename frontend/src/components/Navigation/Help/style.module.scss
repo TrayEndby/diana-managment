@@ -1,0 +1,24 @@
+@import 'constants/variables.scss';
+
+.dropdown {
+  margin-left: 15%;
+
+  &.hidden {
+    visibility: hidden;
+  }
+}
+
+.container {
+  width: 360px;
+  color: $black;
+  padding: 0 1rem;
+
+  :global(.divider) {
+    background-color: $black !important;
+  }
+
+  :global(.footer-icon) {
+    background-color: $blue-dark;
+    border-radius: 100%;
+  }
+}

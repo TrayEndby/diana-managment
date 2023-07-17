@@ -1,0 +1,11 @@
+@import 'constants/variables.scss';
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $md) {
+        height: calc(100vh - #{$nav-height});
+    }
+}

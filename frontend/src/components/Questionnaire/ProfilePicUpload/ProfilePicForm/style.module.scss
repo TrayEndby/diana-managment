@@ -1,0 +1,8 @@
+@import '../../../../constants/variables.scss';
+
+.card {
+    & > *:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+}

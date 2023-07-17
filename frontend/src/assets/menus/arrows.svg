@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.268" height="39.795" viewBox="0 0 54.268 39.795">
+  <g id="arrows" transform="translate(54.268 103.808) rotate(180)">
+    <g id="Group_2526" data-name="Group 2526" transform="translate(23.515 64.013)">
+      <g id="Group_2525" data-name="Group 2525" transform="translate(0 0)">
+        <path id="Path_1828" data-name="Path 1828" d="M238.289,82.7,222.01,64.614a1.81,1.81,0,0,0-1.346-.6H209.811a1.808,1.808,0,0,0-1.346,3.017l15.191,16.88-15.191,16.877a1.811,1.811,0,0,0,1.346,3.021h10.853a1.833,1.833,0,0,0,1.346-.6l16.28-18.088A1.81,1.81,0,0,0,238.289,82.7Z" transform="translate(-208 -64.013)" fill="#d3d3d3"/>
+      </g>
+    </g>
+    <g id="Group_2528" data-name="Group 2528" transform="translate(0 64.013)">
+      <g id="Group_2527" data-name="Group 2527" transform="translate(0 0)">
+        <path id="Path_1829" data-name="Path 1829" d="M30.289,82.7,14.01,64.614a1.81,1.81,0,0,0-1.346-.6H1.811A1.808,1.808,0,0,0,.465,67.03L15.656,83.91.465,100.787a1.811,1.811,0,0,0,1.346,3.021H12.664a1.833,1.833,0,0,0,1.346-.6l16.28-18.088A1.81,1.81,0,0,0,30.289,82.7Z" transform="translate(0 -64.013)" fill="#d3d3d3"/>
+      </g>
+    </g>
+  </g>
+</svg>

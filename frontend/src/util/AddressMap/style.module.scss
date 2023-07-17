@@ -1,0 +1,15 @@
+@import 'constants/variables.scss';
+
+.locationLink {
+    color: $green !important;
+    cursor: pointer;
+    display: inline;
+}
+
+.iframeLocationWrap {
+    height: 450px;
+
+    @media (min-width: $sm) {
+        height: 600px;
+    }
+}

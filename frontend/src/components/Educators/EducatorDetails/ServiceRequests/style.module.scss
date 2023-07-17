@@ -1,0 +1,41 @@
+@import '../../../../constants/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    @media (min-width: $sm) {
+        margin: 10px 40px;
+    }
+}
+
+.contentContainer {
+    margin-top: 10px;
+    border-radius: 4px;
+    min-height: calc(100vh - 192px);
+
+    > div {
+        height: calc(
+            100vh - 190px
+        ); // for height on educator conversation component
+    }
+}
+
+.sidebarLayout {
+    display: flex;
+    height: 600px;
+    border-radius: 4px;
+
+    .sidebar {
+        background-color: $blue-dark;
+        width: 30%;
+        height: 100%;
+    }
+
+    .content {
+        background-color: $white;
+        flex: 1;
+        height: 100%;
+    }
+}

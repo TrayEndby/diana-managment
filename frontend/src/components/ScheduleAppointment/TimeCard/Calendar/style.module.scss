@@ -1,0 +1,39 @@
+@import 'constants/variables.scss';
+
+$cell-size: 50px;
+$calendar-w: $cell-size * 7 + 15; 
+
+.calendar {
+    width: $calendar-w;
+
+    :global(.rbc-toolbar) {
+        :global(.rbc-btn-group:last-child) {
+            display: none;
+        }
+    }
+
+    :global(.rbc-row-bg),
+    :global(.rbc-month-row),
+    :global(.rbc-month-header),
+    :global(.rbc-header),
+    :global(.rbc-date-cell),
+    :global(.rbc-day-bg) {
+        flex: 0 0 $cell-size;
+    }
+
+    :global(.rbc-date-cell) {
+        a {
+            pointer-events: none;
+        }
+    }
+}
+
+.free {
+    background-color: $green;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &.selected {
+        opacity: 1;
+    }
+}

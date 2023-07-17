@@ -1,0 +1,57 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-color: $grey-light;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 3rem;
+    position: relative;
+
+    @media (max-width: $md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $sm) {
+        grid-template-columns: 1fr;
+
+        .card {
+            margin: 1rem auto;
+        }
+    }
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 1rem 2rem;
+    margin: 1rem;
+    transition: all 0.3s ease-out;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 18px;
+        font-weight: bold;
+        color: $orange;
+        text-align: center;
+    }
+
+    img {
+        margin-top: auto;
+        height: 200px;
+    }
+}

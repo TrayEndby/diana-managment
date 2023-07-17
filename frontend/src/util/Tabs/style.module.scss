@@ -1,0 +1,32 @@
+@import 'constants/variables.scss';
+
+.tabs {
+    background-color: $grey-blue-light;
+    justify-content: space-around;
+    margin: 0;
+    z-index: 1;
+
+    :global(.tab) {
+        color: #ffffff40;
+        cursor: pointer;
+        height: 100%;
+        padding: 5px;
+        font-size: 17px;
+        margin: 0;
+        color: $white;
+    
+        &:hover {
+            color: $green;
+        }
+    }
+    
+    :global(.active) {
+        color: $green;
+        font-weight: bold;
+    }
+    
+    :global(.disabled) {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}

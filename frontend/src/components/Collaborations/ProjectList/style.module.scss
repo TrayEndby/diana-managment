@@ -1,0 +1,16 @@
+@import '../../../constants/variables.scss';
+
+.loading {
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.seeMoreButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 140px;
+    min-width: 140px;
+    width: 140px;
+}

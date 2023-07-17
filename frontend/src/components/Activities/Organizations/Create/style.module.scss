@@ -1,0 +1,148 @@
+@import '../../../../constants/variables.scss';
+.wholeContainer {
+    margin-bottom: 30px;
+}
+.mainContainer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid $grey;
+    box-shadow: -7px 12px 12px -6px #000;
+    margin: 0 auto 40px;
+
+    textarea {
+        resize: none;
+        height: 60px;
+    }
+
+    .row {
+        display: flex;
+        padding: 0;
+
+        .image {
+            height: 335px;
+            width: 50%;
+            background-color: $grey-dark;
+            color: $white;
+            border-radius: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+
+            input {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        .mainInfo {
+            height: 335px;
+            width: 50%;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+
+            .categories {
+                justify-content: space-between;
+                flex-direction: row;
+
+                > div {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .dropdown {
+                        > div {
+                            max-height: 400px;
+                            overflow: auto;
+                        }
+
+                        .dropdownButton {
+                            max-width: 100%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.secondaryContainer {
+    border-radius: 0.4rem;
+    display: flex;
+    width: 80%;
+    margin: 0 auto 40px;
+    border: none;
+    box-shadow: -7px 12px 12px -6px #000;
+
+    .header {
+        border-radius: 0.4rem 0.4rem 0 0;
+        color: $white;
+        background-color: $grey-blue-light;
+    }
+
+    .details {
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 200px;
+        }
+    }
+}
+
+.submitBlock {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    :first-child {
+        margin-right: 10px;
+    }
+}
+
+.modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    > * {
+        margin: auto 0;
+    }
+}
+
+.exploreBtn{
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+@media (max-width: 1000px) {
+    .mainContainer {
+        .row {
+            flex-direction: column;
+
+            .image,
+            .mainInfo {
+                width: 100%;
+            }
+        }
+    }
+}

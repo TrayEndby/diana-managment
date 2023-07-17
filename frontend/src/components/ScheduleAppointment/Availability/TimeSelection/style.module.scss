@@ -1,0 +1,21 @@
+$w: 135px;
+
+.dropdown {
+  :global(.dropdown) {
+    width: $w;
+
+    button {
+      width: $w;
+    }
+  }
+
+  :global(.dropdown-menu) {
+    max-height: 300px;
+    overflow: auto;
+  }
+}
+
+.text {
+  width: $w;
+  text-align: center;
+}

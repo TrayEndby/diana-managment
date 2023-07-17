@@ -1,0 +1,45 @@
+@import 'constants/variables.scss';
+
+.container {
+    background-color: $light-warm-grey;
+    height: 100%;
+    padding: 0.5rem;
+    overflow: auto;
+
+    @media (min-width: $sm) {
+        padding: 1.5rem;
+    }
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    @media (max-width: $md) {
+        flex-direction: column;
+
+        .navBar {
+            margin-bottom: 1rem;
+            margin-right: 0;
+        }
+    }
+}
+
+.navBar,
+.calendar {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    flex: 0 0 20%;
+}
+
+.calendar {
+    flex: 1 1 auto;
+}

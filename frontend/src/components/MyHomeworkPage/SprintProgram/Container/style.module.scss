@@ -1,0 +1,37 @@
+@import 'constants/variables.scss';
+
+.sprintPage {
+    height: 100%;
+    
+    .body {
+        background-color: $light-warm-grey;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    :global(.card-header) {
+        color: $white !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+    }
+
+    :global(.card-body){
+        margin-left: 0px !important;
+        font-size: 15px !important;
+        font-weight: bold;
+    }
+
+    :global(.App-body){
+        height: calc(100vh - 98px);
+    }
+
+    :global(.caption) {
+        font-size: 18px;
+    }
+
+    :global(.contentWrap) {
+        background-color: white;
+    }
+}

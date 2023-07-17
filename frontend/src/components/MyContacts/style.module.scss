@@ -1,0 +1,85 @@
+@import '../../constants/variables.scss';
+
+.page {
+    background-color: #5c6070;
+    // min-height: calc(100vh - 62px);
+    padding: 20px;
+    height: calc(100vh - 62px);
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px 15px;
+    margin: 30px auto;
+    overflow-y: auto;
+
+    @media (min-width: $sm) {
+        width: 80%;
+        margin: 60px auto;
+    }
+
+    @media (min-width: $lg) {
+        width: 60%;
+    }
+}
+
+.wrap {
+    padding: 40px 60px;
+    background-color: $white;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    height: calc(100% - 58px);
+    overflow: auto;
+    position: relative;
+}
+
+.list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    padding: 1rem;
+    background-color: $white;
+    width: 100%;
+    grid-area: contacts;
+
+    @media (min-width: $md) {
+        grid-template-columns: 50% 50%;
+    }
+
+    @media (min-width: $lg) {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    & > div {
+        margin: 10px 20px;
+    }
+}
+
+.searchInput {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.lettersSearch {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: 700;
+
+    .letter {
+        cursor: pointer;
+        text-align: center;
+
+        &.active {
+            color: $green;
+        }
+    }
+}

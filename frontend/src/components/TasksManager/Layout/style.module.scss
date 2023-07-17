@@ -1,0 +1,81 @@
+@import 'constants/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 0;
+}
+
+.topBar {
+    background-color: $light-warm-grey;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px $padding-x;
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+    .leftSide {
+        display: flex;
+        justify-content: flex-start;
+        flex: 0 0 22%;
+    }
+
+    .midSide {
+        flex: 1 1 56%;
+    }
+
+    .rightSide {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 0 22%;
+    }
+}
+
+.contentWrapper {
+    height: 100%;
+    overflow-y: auto;
+    background-color: $light-warm-grey;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0 16px 32px;
+}
+
+.content {
+    height: 100%;
+    flex: 1 1 auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: $sm) {
+    .topBar {
+        h5 {
+            font-size: 1rem;
+        }
+
+        > div {
+            &:first-child,
+            &:last-child {
+                flex: 0 0 27%;
+                padding: 0;
+            }
+
+            &:nth-child(2) {
+                flex: 1 1 auto;
+            }
+
+            button {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

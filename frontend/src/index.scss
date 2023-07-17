@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import './constants/variables.scss';
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    display: flex;
+
+    #root {
+        min-height: 100%;
+        width: 100%;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: $creamy-white;
+    border: 1px solid $light-warm-grey;
+    border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $green;
+}
+
+.react-markdown {
+    ol,
+    ul {
+        padding-left: 1em;
+    }
+}
+
+.popover {
+    z-index: $z-index-md - 1 !important;
+}
+
+// mobile styles for react-big-calendar
+@media (max-width: $md) {
+    .rbc-time-view,
+    .rbc-month-view {
+        overflow: auto;
+    }
+
+    .rbc-time-header,
+    .rbc-time-content,
+    .rbc-month-row {
+        min-width: 700px;
+        overflow-y: scroll;
+    }
+
+    .rbc-month-header {
+        min-width: 700px;
+    }
+
+    .rbc-toolbar .rbc-btn-group button {
+        padding: 0.375rem;
+    }
+}

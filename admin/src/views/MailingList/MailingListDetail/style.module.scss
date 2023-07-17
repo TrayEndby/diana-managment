@@ -1,0 +1,47 @@
+@import "constants/variables.scss";
+
+:global(.card-header) {
+  color: $orange;
+  font-size: 20px;
+}
+
+:global(nav) {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+:global(.btn) {
+  &:focus,
+  &.focus {
+    box-shadow: none !important;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 290px;
+  left: 325px;
+  background-color: $white;
+  border: 1px solid $grey;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.dropdownItem {
+  padding: 5px 25px 5px 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: $grey-light;
+  }
+}
+
+:global(.close) {
+  color: "white";
+}
+
+.backText {
+  display: inline;
+  font-size: 16px;
+  cursor: pointer;
+}

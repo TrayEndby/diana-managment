@@ -1,0 +1,127 @@
+@import 'constants/variables.scss';
+
+.csaForm {
+    :global(.container-fluid) {
+        position: relative;
+        background-color:$blue-dark;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        position: relative;
+        background-color:black;
+        height: min-content;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        color: white;
+    
+        &:after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 42%;
+            padding-top: 10px;
+            border-bottom: 3px solid;
+            border-color: $orange;
+        }
+    }
+    
+    .receiveList {
+        display: inline-block;
+        text-align: left;
+        margin-top: 30px;
+    
+        li {
+            color: white;
+            font-size: 21px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+    
+    .smallText {
+        font-size:19px;
+        margin-top: 30px;
+        font-weight: 800;
+        color: white;
+    }
+    
+    .wave{
+        display: block;
+        margin: 0 auto;
+        left:5%;
+        transform: rotate(180deg);
+        position: absolute;
+        width: 90%;
+        top:-1%;
+    }
+
+    .wave1{
+        display: block;
+        margin: 0 auto;
+        bottom: -70px;
+        position: absolute;
+        width: 90%;
+        right:4%;
+        margin-bottom: 20px;
+        max-height: 150px;
+    }
+
+    .formContainer {
+        background-color: white;
+        height: min-content;
+    }
+    
+    .form {
+        margin:115px 80px 80px 80px;
+    
+        h2 {
+            margin-bottom: 50px;
+            margin-top: 50px;
+    
+            &:after {
+                content: "";
+                display: block;
+                margin: 0 auto;
+                width: 42%;
+                padding-top: 10px;
+                border-bottom: 3px solid;
+                border-color: $green;
+            }
+        }
+    
+        .verify {
+            margin-top:14px;
+            margin-left:20px
+        }
+    
+        .empty {
+            height:40px
+        }
+    }
+    
+    .footer {
+        height: 60px;
+        background-color:$blue-dark;
+        padding: 0px !important;
+    
+        > div > a:hover {
+            text-decoration: none;
+        }
+    }    
+}
+
+.valid {
+    color: $green;
+}
+
+.invalid {
+    color: $red;
+}

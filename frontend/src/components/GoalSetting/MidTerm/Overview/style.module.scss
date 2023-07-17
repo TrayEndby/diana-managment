@@ -1,0 +1,140 @@
+@import '../../../../constants/variables.scss';
+
+.overview {
+    padding: 1rem 3rem;
+    background-color: $white;
+}
+
+.intros {
+    text-align: center;
+
+    .intro-0 {
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: $green;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .intro-2 {
+        margin: 2rem auto;
+        background-color: $light-warm-grey;
+        padding: 1rem 5rem;
+        width: fit-content;
+        border-radius: 6px;
+
+        .quote {
+            color: $green;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .name {
+            color: $grey-blue-black;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.grade {
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+    
+    &.left {
+        flex-direction: row;
+
+        .outline {
+            margin-right: 4rem;
+        }
+    }
+
+    &.right {
+        flex-direction: row-reverse;
+
+        .outline {
+            margin-left: 4rem;
+        }
+    }
+
+    .outline {
+        border: 1px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 2rem 1rem 0;
+
+        .info {
+            margin-left: 1.5rem;
+
+            h5 {
+                color: $orange;
+                font-weight: bold;
+                text-align: center;
+            }
+    
+            a {
+                display: block;
+                color: $black;
+                text-decoration: underline !important;
+                margin-left: 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+
+        .picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin: auto 1rem;
+        }
+    }
+
+    .logo {
+        flex: 0 0 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: $blue-dark;
+        font-size: 24px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $orange;
+        }
+
+        span {
+            margin-top: auto;
+        }
+
+        b {
+            margin-bottom: auto;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .grade {        
+        &.left {    
+            .outline {
+                margin-right: 1rem !important;
+            }
+        }
+    
+        &.right {    
+            .outline {
+                margin-left: 1rem !important;
+            }
+        }
+    }
+}

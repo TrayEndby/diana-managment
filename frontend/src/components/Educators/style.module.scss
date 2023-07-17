@@ -1,0 +1,40 @@
+@import '../../constants/variables.scss';
+
+.page {
+    background-color: $grey-blue-black;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+
+    & > section {
+        height: 100%;
+    }
+}
+
+.menu {
+    grid-area: nav;
+}
+
+.resultContainer {
+    grid-area: main;
+    overflow-y: auto;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 2rem;
+    background-color: $blue-dark;
+    color: $white;
+    overflow: auto;
+
+    .header {
+        text-align: center;
+    }
+
+    .formCheck {
+        display: flex;
+    }
+}

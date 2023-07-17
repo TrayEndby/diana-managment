@@ -1,0 +1,15 @@
+@import 'constants/variables.scss';
+.video {
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    h6 {
+        color: $green !important;
+        margin-bottom: 0.2rem;
+    }
+
+    video {
+        width: 100%;
+    }
+}

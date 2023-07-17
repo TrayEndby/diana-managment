@@ -1,0 +1,124 @@
+@import 'constants/variables.scss';
+
+.form {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+  width: 90%;
+  padding: 1rem;
+  overflow-y: auto;
+
+  :global(.form-group) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.form-label) {
+    font-size: 14px;
+  }
+
+  :global(.form-control) {
+    font-size: 14px;
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 90%;
+  }
+}
+
+.section {
+  margin-bottom: 1rem;
+
+  &.highlight {
+    .title {
+      color: $orange;
+    }
+  }
+      
+  .title {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > svg {
+      color: $orange;
+    }
+
+    > span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .content {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.rolesButton {
+  display: flex;
+  flex-direction: row;
+
+  button {
+    margin-right: 1rem;
+    text-transform: capitalize;
+
+    &.highlight {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}
+
+.whatToKnow, .grades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  label {
+    text-transform: capitalize;
+  }
+}
+
+.whatToKnow {
+  > div {
+    font-size: 14px;
+
+    &:nth-child(odd) {
+      flex: 0 0 45%;
+    }
+
+    &:nth-child(even) {
+      flex: 0 0 55%;
+    }
+  }
+}
+
+.grades {
+  > div {
+    font-size: 14px;
+
+    &:nth-child(odd) {
+      flex: 0 0 25%;
+    }
+
+    &:nth-child(even) {
+      flex: 0 0 75%;
+    }
+  }
+}
+
+.agreement {
+  display: flex;
+  flex-direction: row;
+
+  a {
+    color: $orange;
+    text-decoration: underline !important;
+  }
+}
+
+.submit {
+  display: flex;
+  margin: 1rem auto;
+}

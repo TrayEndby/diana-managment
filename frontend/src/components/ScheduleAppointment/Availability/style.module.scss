@@ -1,0 +1,86 @@
+@import 'constants/variables.scss';
+
+.body {
+  background-color: white;
+  padding: 1rem;
+  min-height: 90%;
+}
+
+.container {
+  width: 60%;
+  min-height: 80vh;
+  margin: auto;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  @media (max-width: $lg) {
+    width: 70%;
+  }
+
+  @media (max-width: $md) {
+    width: 95%;
+  }
+
+  @media (max-width: $sm) {
+    width: 95%;
+
+    .label {
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      flex-direction: column !important;
+    }
+
+    .add {
+      margin: 1rem auto;
+      display: flex;
+    }
+  }
+}
+
+.section {
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid $grey-light;
+  padding: 0.5rem;
+
+  .label {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    height: 38px;
+    line-height: 38px;
+
+    .time {
+      margin: 0 0.5rem;
+    }
+  }
+
+  .delete {
+    position: relative;
+    top: 7px;
+  }
+
+  .add {
+    margin-left: auto;
+  }
+}
+
+.save {
+  display: flex;
+  margin: 1rem auto 0 auto;
+}

@@ -1,0 +1,21 @@
+@import 'constants/variables.scss';
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  color: $orange;
+  font-weight: bold;
+
+  .right {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    path {
+      fill: $orange;
+    }
+  }
+}

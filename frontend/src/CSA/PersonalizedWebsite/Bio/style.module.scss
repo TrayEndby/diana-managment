@@ -1,0 +1,71 @@
+@import 'constants/variables.scss';
+
+.aboutMe {
+    width: 100%;
+    height: 400px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    background-color: $blue-dark;
+
+    header {
+        position: relative;
+
+        svg {
+            color: black;
+        }
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+    }
+
+    .picture {
+        flex: 0 0 50%;
+        display: flex;
+
+        $diff: 15px;
+
+        .image {
+            border: 10px solid $orange;
+            background-color: $orange;
+            border-radius: 100%;
+            margin: auto;
+            position: relative;
+            top: $diff;
+            left: -$diff;
+
+            img {
+                width: 200px !important;
+                height: 200px !important;
+                position: relative;
+                top: -$diff;
+                left: $diff;
+            }
+        }
+    }
+
+    .about {
+        flex: 0 0 50%;
+        padding-top: 3rem;
+        padding-right: 3rem;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-size: 20px;
+            font-weight: auto;
+        }
+
+        .detail {
+            margin: 1rem 0;
+        }
+
+        button {
+            margin-top: auto;
+            width: fit-content;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.detail {
+    flex-direction: row;
+
+    :global(.imgContainer) {
+        flex: none;
+        padding-top: 0;
+        width: 150px;
+        height: 150px;
+
+        > img {
+            position: static;
+        }
+    }
+
+    :global(.content) {
+        padding-left: 10px;
+
+        p {
+            white-space: pre-wrap;
+        }
+    }
+}
+
+.button {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}

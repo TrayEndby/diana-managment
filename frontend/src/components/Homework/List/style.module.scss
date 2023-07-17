@@ -1,0 +1,126 @@
+@import 'constants/variables.scss';
+
+.header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0.5rem;
+
+    button {
+        margin-left: 1rem;
+
+        &:first-child {
+            margin-left: auto;
+        }
+    }
+}
+
+.list {
+    padding: 0.5rem 0;
+
+    .tr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid $grey-light;
+        font-size: 15px;
+        padding: 0 1rem;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &.selected {
+            background-color: $grey-light;
+        }
+
+        .name {
+            > span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .highlight {
+            color: $green;
+        }
+    }
+
+    &.coach_assignment {
+        .tr {
+            .name {
+                flex: 0 0 30%;
+            }
+
+            .owner, .date, .action {
+                flex: 0 0 20%;
+            }
+    
+            .status {
+                flex: 0 0 10%;
+            }
+        }
+    }
+
+    &.coach_submitted {
+        .tr {
+            .name, .owner, .date {
+                flex: 0 0 33%;
+            }
+        }
+    }
+
+    &.user_all {
+        .tr {
+            .name, .owner, .date {
+                flex: 0 0 30%;
+            }
+
+            .status {
+                flex: 0 0 10%;
+            }
+        }
+    }
+
+    .tHead {
+        color: $orange;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $grey-light;
+    }
+
+    .tbody {
+        overflow: auto;
+        min-height: 0;
+
+        .td {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .name {
+            span {
+                margin-left: 1rem;
+            }
+        }
+
+        .action {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.underline {
+    text-decoration: underline;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.disabled {
+    opacity: 0.5;
+}

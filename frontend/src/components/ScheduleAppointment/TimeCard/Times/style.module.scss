@@ -1,0 +1,27 @@
+@import 'constants/variables.scss';
+
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.slot {
+    border-radius: 5px;
+    background-color: $btn-bg;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    flex: 0 0 100px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    color: $black;
+    font-weight: 600;
+
+    &.active {
+        background-color: $green;
+        color: $white;
+    }
+}

@@ -1,0 +1,36 @@
+.jumbotron {
+  margin:auto;
+  width: 70%;
+  background-color: #152332;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.astronaut {
+  position: absolute;
+  right: -50px;
+  width: 200px;
+  top: 280px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .jumbotron {
+      width:100%;
+  }
+} 
+
+@media (max-width: 900px) {
+  .jumbotron {
+      width:90%;
+
+      h2 {
+        font-size:25px
+      }
+      h1 {
+        font-size:30px;
+      }
+  }
+  
+} 

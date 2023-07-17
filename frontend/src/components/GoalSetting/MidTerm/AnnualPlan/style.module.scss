@@ -1,0 +1,115 @@
+@import '../../../../constants/variables.scss';
+
+.plan {
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+
+    header {
+        height: 30px;
+        line-height: 30px;
+        background-color: $green;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        color: $white;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.table {
+    .tHead {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        color: $orange;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0 1.5rem;
+
+        span {
+            text-align: center;
+        }
+    }
+
+    .tr {
+        display: flex;
+        flex-direction: row;
+
+        &:last-child {
+            .divider {
+                display: none;
+            }
+        }
+
+        .td {
+            flex: 0 0 33%;
+            padding: 0 1rem;
+            border-right: 1px solid $grey-light;
+            display: flex;
+            flex-direction: column;
+
+            &:last-child {
+                border: none;
+            }
+
+            .picture {
+                width: 90%;
+            }
+
+            .divider {
+                height: 1px;
+                width: 90%;
+                background-color: $grey-light;
+                margin-top: auto;
+                margin-bottom: 1rem;
+            }
+
+            strong {
+                color: $orange;
+            }
+
+            pre {
+                white-space: break-spaces;
+            }
+        }
+    }
+
+    .hint {
+        display: none;
+    }
+}
+
+@media (max-width: $lg) {
+    .content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .table {
+        .tHead {
+           display: none;
+        }
+
+        .tr {
+            flex-direction: column;
+            
+            .td {
+                border-right: none;
+            }
+        }
+
+        .hint {
+            display: block;
+            color: $orange;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 1rem 0;
+        }
+    }
+}

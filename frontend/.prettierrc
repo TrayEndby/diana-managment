@@ -1,0 +1,33 @@
+{
+    "semi": true,
+    "tabWidth": 4,
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "overrides": [
+        {
+            "files": "src/components/**/*.js",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "src/CSA/**/*.js",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "src/util/**/*.js",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "src/layout/**/*.js",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}

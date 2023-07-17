@@ -1,0 +1,45 @@
+@import '../../../../constants/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .input {
+            margin: 0 10px;
+        }
+    }
+
+    .removeBtn {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+        color: $green;
+        margin-left: 15px;
+
+        &:hover,
+        &:active {
+            background-color: transparent !important;
+        }
+    }
+
+    .add {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: $green;
+        margin: 20px 0 10px 10px;
+
+        p {
+            margin-bottom: 0;
+            margin-left: 5px;
+            font-weight: 600;
+        }
+    }
+}

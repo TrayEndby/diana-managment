@@ -1,0 +1,71 @@
+
+.container {
+  direction: rtl;
+  margin: 0;
+}
+
+.item {
+  max-width: 33.3%;
+  width: 100px;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  border-bottom: 1px solid lightgray;
+}
+
+.parentitem {
+  max-width: 33.3%;
+  width: 100px;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  border-bottom: 1px solid lightgray;
+}
+
+.navLink {
+  padding: 0;
+}
+
+.itemColor {
+  color: black;
+}
+
+.itemColor:hover {
+  color: #53A548;
+}
+
+.selectedItem {
+  max-width: 33.3%;
+  width: 100px;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  border-top: 2px solid #53A548;
+}
+
+.selectedParentItem {
+  max-width: 33.3%;
+  width: 100px;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  border-top: 2px solid #53A548;
+}
+
+@media only screen and (max-width: 575px) and (min-width: 0px) {
+  .parentitem {
+    border-left: 0px;
+  }
+  .selectedParentItem {
+    border-left: 0px;
+  }
+}
+
+.emptySpace {
+  width: calc(100% - 300px);
+  border-bottom: 1px solid lightgrey;
+}

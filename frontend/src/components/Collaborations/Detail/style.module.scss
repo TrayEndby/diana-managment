@@ -1,0 +1,105 @@
+@import '../../../constants/variables.scss';
+
+.mainContainer {
+    display: flex;
+    width: 80%;
+    border-radius: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: none;
+    margin: 20px auto 40px;
+
+    textarea {
+        resize: none;
+        height: 60px;
+    }
+
+    .row {
+        display: flex;
+        padding: 0;
+
+        .image {
+            height: 100%;
+            width: 50%;
+            background-color: $grey-dark;
+            color: $white;
+            border-radius: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+
+            input {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
+        .mainInfo {
+            height: 100%;
+            width: 50%;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.secondaryContainer {
+    border-radius: 0.4rem;
+    display: flex;
+    width: 80%;
+    margin: 0 auto 40px;
+    border: none;
+    border-radius: 0;
+
+    header {
+        color: $white;
+        background-color: $grey-blue-light;
+        border-radius: 0 !important;
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        height: 200px;
+    }
+}
+
+.submitBlock {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    :first-child {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mainContainer {
+        .row {
+            flex-direction: column;
+
+            .image,
+            .mainInfo {
+                width: 100%;
+            }
+        }
+    }
+}

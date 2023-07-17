@@ -1,0 +1,31 @@
+@import '../../../constants/variables.scss';
+
+.expertise {
+    background-color: $light-blue-gray;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+
+    .expertiseContent {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        width: 100%;
+
+        > div:first-child {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: $light-warm-grey;
+        margin: 0 15px;
+        padding: 0 32px 16px;
+    }
+}

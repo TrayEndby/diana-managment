@@ -1,0 +1,69 @@
+@import '../../../../constants/variables.scss';
+
+.expWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.expTitle {
+    color: $green;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.expHeader {
+    display: flex;
+    align-items: center;
+}
+
+.expContentWrap {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.expContentWrap {
+    display: flex;
+    align-items: center;
+    margin: 0px -15px;
+}
+
+.expItem {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid $green;
+    background-color: $white;
+    align-items: center;
+    margin: 5px 15px;
+    position: relative;
+
+    .expItemName {
+        color: $black;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 0;
+        padding: 5px 15px;
+    }
+}
+
+.expAdd {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+
+    &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.expRemove {
+    position: absolute;
+    right: -10px;
+    top: -25px;
+    cursor: pointer;
+}

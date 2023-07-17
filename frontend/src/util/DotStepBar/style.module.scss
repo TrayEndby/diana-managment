@@ -1,0 +1,101 @@
+@import 'constants/variables.scss';
+
+.root {
+    position: relative;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.root_second_step {
+    position: relative;
+    display: flex;
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.timeline {
+    position: relative;
+    height: 10px;
+    background-color: white;
+}
+
+.timeline_progress {
+    width: 0;
+    height: 100%;
+    background-color: $green;
+}
+
+.timeline_title {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.timeline_head {
+    position: absolute;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: $green;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline_head_zero {
+    position: absolute;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline_head_number {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+.timeline_head_number_zero {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+.timeline_end {
+    position: absolute;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: $green;
+    top: -10px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline_end_zero {
+    position: absolute;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    top: -10px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+}

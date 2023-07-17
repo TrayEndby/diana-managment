@@ -1,0 +1,9 @@
+@import 'constants/variables.scss';
+
+.container {
+    :global(.App-grid-list-container) {
+        margin-top: 0;
+        height: 100%;
+        background-color: white;
+    }
+}

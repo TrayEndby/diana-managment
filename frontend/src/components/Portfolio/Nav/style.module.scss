@@ -1,0 +1,54 @@
+@import 'constants/variables.scss';
+
+.tabs {
+  background-color: $light-warm-grey;
+  
+  :global(.tab) {
+    color: $black;
+    flex: 1 1 auto;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 0.5rem;
+
+    &:hover, &:global(.active) {
+      color: $white;
+      background-color: $orange;
+      font-weight: normal;
+
+      :global(.image) {
+        &:not(:global(.lineOnly)) {
+          path {
+            fill: $white;
+          }
+        }
+    
+        &:global(.lineOnly) {
+          path {
+            stroke: $white;
+          }
+        }
+        
+      }
+    }
+  }
+
+  :global(.image) {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+    position: relative;
+    top: -1px;
+    
+    &:not(:global(.lineOnly)) {
+      path {
+        fill: $grey;
+      }
+    }
+
+    &:global(.lineOnly) {
+      path {
+        stroke: $grey;
+      }
+    }
+  }
+}

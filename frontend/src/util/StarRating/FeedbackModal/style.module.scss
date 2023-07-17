@@ -1,0 +1,19 @@
+@import 'constants/variables.scss';
+
+.row {
+    width: 100%;
+    padding: 0 20px;
+
+    textarea {
+        width: 100%;
+        resize: none;
+    }
+
+    &.rate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+.form {
+    background-color: white;
+    border-radius: 3px;
+    padding: 1rem;
+
+    textarea {
+        min-height: 200px;
+    }
+
+    button {
+        display: flex;
+        margin: 0 auto;
+    }
+}

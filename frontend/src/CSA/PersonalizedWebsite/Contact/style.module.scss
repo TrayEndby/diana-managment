@@ -1,0 +1,31 @@
+@import 'constants/variables.scss';
+
+.contact {
+    background-color: $light-warm-grey;
+
+    header {
+        position: relative;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+
+        > div {
+            margin-right: 3rem;
+
+            &:first-child {
+                margin-left: auto;
+            }
+
+            &:last-child {
+                margin-right: auto;
+            }
+
+            svg {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

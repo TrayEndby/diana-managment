@@ -1,0 +1,28 @@
+@import 'constants/variables.scss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBar {
+    height: $nav-height;
+}
+
+.main {
+    overflow-y: auto;
+}
+
+.topBar {
+    :global(.search) {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+    margin: 1rem 0;
+}

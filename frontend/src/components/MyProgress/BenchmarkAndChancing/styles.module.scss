@@ -1,0 +1,215 @@
+@import 'constants/variables.scss';
+.benchmarkPage {
+    background-color: $blue-dark;
+    
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .title {
+            display: flex;
+            margin: 0.5rem auto;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 32px;
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        color: $black;
+        background-color: $white;
+        z-index: 2;
+        border-top: 1px solid $grey-black;
+
+        > div {
+            padding: 0.5rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $creamy-white;
+            }
+        }
+    }
+
+    .page {
+        display: grid;
+        height: calc(100% - 100px);
+        width: 100%;
+        grid-template-rows: fit-content(0) 1fr;
+        color: $white;
+        padding: 0 6rem;
+
+        .container {
+            width: 100%;
+            position: relative;
+            margin: 2rem auto;
+
+            .xAxis {
+                height: 25px;
+                background: $orange;
+                background: linear-gradient(
+                    90deg,
+                    $red 0%,
+                    $orange 10%,
+                    #fbac9e 45%,
+                    #f5e9e6 50%,
+                    #d7cea2 55%,
+                    $green 80%,
+                    #1b4d14 100%
+                );
+                position: absolute;
+                bottom: 0;
+                left: 25px;
+                right: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .delimiter {
+                    width: 2px;
+                    height: 33%;
+                    background-color: $white;
+                }
+
+                .maxValue {
+                    margin: 0;
+                }
+
+                .label {
+                    position: absolute;
+                    top: 40px;
+                }
+            }
+
+            .minValue {
+                position: absolute;
+                bottom: 12px;
+                left: 8px;
+                transform: translateY(50%);
+                margin: 0;
+            }
+
+            .yAxis {
+                // background-color: #2700fc;
+                position: absolute;
+                bottom: 25px;
+                width: 25px;
+                top: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+
+                .delimiter {
+                    width: 33%;
+                    height: 2px;
+                    background-color: $white;
+                }
+
+                .maxValue {
+                    position: absolute;
+                    top: 0;
+                    transform: rotate(-90deg) translate(-50%, -30px);
+                }
+
+                .label {
+                    position: absolute;
+                    transform: rotate(-90deg) translateY(-30px);
+                }
+            }
+
+            .chart {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 25px;
+                left: 25px;
+
+                .point {
+                    position: absolute;
+                    cursor: pointer;
+                    bottom: 0;
+                    left: 0;
+                    width: 15px;
+                    height: 15px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    border: 2px solid #ffffff60;
+                    box-shadow: 0 0 11px 6px #ffffff30;
+                    transform: translate(-100%, -100%);
+                    z-index: 1;
+
+                    &:hover {
+                        z-index: 2;
+                        .popup {
+                            display: flex;
+                        }
+                    }
+
+                    .popup {
+                        display: none;
+                        z-index: 3;
+                        background-color: $white;
+                        width: 260px;
+                        flex-direction: column;
+                        color: $black;
+                        padding: 0.5rem 1rem;
+                        border: 1px solid;
+                        border-radius: 0.4rem;
+                        position: absolute;
+                        right: 20px;
+                        top: 10px;
+
+                        .header {
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+
+                        .chance {
+                            font-weight: 600;
+                        }
+
+                        .footer {
+                            display: flex;
+                            justify-content: space-around;
+                        }
+
+                        p {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.input {
+    display: flex;
+    position: relative;
+    width: 310px;
+    align-items: center;
+
+    > input {
+        width: 310px;
+        height: 32px;
+        padding: 0 1rem 0 50px;
+        border: 0;
+        outline: none;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-radius: 20px;
+    }
+
+    > svg {
+        position: absolute;
+        left: 10px;
+        color: black;
+    }
+}

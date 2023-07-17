@@ -1,0 +1,206 @@
+@import 'constants/variables.scss';
+
+.navbar {
+    background-color: $blue-dark;
+    padding: 0 0 0 $padding-x;
+    z-index: $z-index-navBar;
+    flex: 0 0 auto; // needed for Safari's style
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .navCollapse {
+        padding-top: 10px;
+        justify-content: space-between;
+        background-color: $grey-light;
+        height: 100%;
+        padding: 0;
+    }
+    .kyrosLogo {
+        width:17%;
+    }
+
+    .tabs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        width: max-content;
+
+        :global(.nav-item) {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .disabled {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+
+            > a {
+                color: black;
+                border-radius: 5px;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &.black {
+                background-color: $blue-dark;
+
+                > a {
+                    color: $white;
+                }
+
+                &.last {
+                    clip-path: polygon(-10% 0%, 100% 0%, 20% 100%, 0% 100%);
+                }
+
+                &.active {
+                    > a {
+                        background-color: $orange;
+                    }
+                }
+            }
+
+            &.white {
+                &.active {
+                    > a {
+                        background-color: $green;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdownContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        background-color: $grey-light;
+        height: 100%;
+
+        :global(.dropdown-toggle) {
+            color: black;
+            right: 0px;
+            left: auto;
+
+            &:hover {
+                background-color: $grey-dark;
+            }
+        }
+    }
+    .navSignoutButtonPanel {
+        display: flex;
+        margin-left: auto;
+        background-color: transparent;
+        padding-right: 10px;
+    }
+}
+.kyros-logo-img {
+  width:200px;
+}
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+.logo_nav {
+    width: 50px;
+    height: 50px;
+}
+
+.social-media-container {
+   margin-right:10px;
+}
+.social-icons > a > img{
+    width: 50px;
+    height: 50px;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+ }
+.logoSM {
+    width: 40px;
+    height: 40px;
+}
+
+.logIn {
+    margin: 0 8px;
+}
+
+@media only screen and (max-width: 400px) and (min-width: 0px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: $sm) {
+    .navbar {
+        height: 60px;
+    }
+}
+
+@media (max-width: $lg) {
+    .navbar {
+        .tabs {
+            height: auto !important;
+            justify-content: flex-start;
+
+            .black,
+            .white {
+                flex: 1 1 100%;
+            }
+
+            .black {
+                &.last {
+                    display: none;
+                }
+            }
+
+            .white {
+                background-color: $blue-dark;
+
+                &.first {
+                    border-top: 1px solid $grey-light;
+                    width: fit-content;
+                }
+
+                > a {
+                    color: $white;
+                }
+            }
+        }
+
+        .kyrosLogo {
+            width:18%;
+        }
+        
+        :global(.navbar-toggler) {
+            margin-right: 180px;
+        }
+
+        .dropdownContainer {
+            background-color: transparent;
+            height: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            :global(.dropdown) {
+                margin-right: auto;
+            }
+
+            :global(.dropdown-toggle) {
+                color: white;
+            }
+        }
+    }
+   
+    
+}

@@ -1,0 +1,24 @@
+@import 'constants/variables.scss';
+
+.wave {
+    height: 90px;
+    background-color: white;
+    background-image: url('../../../assets/CSA/wave.png');
+    background-size: cover;
+
+    &.reverse {
+        transform: rotate(180deg);
+    }
+
+    &.grey {
+        background-color: $light-warm-grey;
+    }
+
+    @media (max-width: $md) {
+        height: 70px;
+    }
+
+    @media (max-width: $sm) {
+        height: 40px;
+    }
+}

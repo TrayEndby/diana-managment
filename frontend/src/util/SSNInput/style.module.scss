@@ -1,0 +1,15 @@
+@import 'constants/variables.scss';
+
+.eyeButton {
+    border: 1px solid $input-border-color;
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+    width: 50px;
+    height: auto;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.inputField {
+    border-right: none;
+}

@@ -1,0 +1,8 @@
+.card {
+    grid-template-rows: 1fr fit-content(41px) fit-content(16px);
+
+    & > *:nth-child(1),
+    & > *:nth-child(2) {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../../../../constants/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .promoContainer {
+        display: flex;
+        flex-direction: column;
+
+        .formGroup {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .csaIdInput {
+            text-transform: uppercase;
+        }
+
+        .promoCodeStatus {
+            font-size: 16px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 2px;
+            }
+
+            &.success {
+                color: $green;
+            }
+
+            &.error {
+                color: $red;
+            }
+        }
+    }
+
+    .verifyBtn {
+        margin-left: 10px;
+    }
+}

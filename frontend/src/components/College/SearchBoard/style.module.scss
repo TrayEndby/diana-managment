@@ -1,0 +1,30 @@
+@import '../../../constants/variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 13px;
+    background-color: $grey-blue-light;
+    min-height: 61px;
+
+    .filterManipulation {
+        background-color: $grey-blue-light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > * {
+            cursor: pointer;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.clearAll {
+    position: relative;
+    top: 3px;
+}

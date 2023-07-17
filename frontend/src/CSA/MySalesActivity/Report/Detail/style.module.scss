@@ -1,0 +1,35 @@
+@import 'constants/variables.scss';
+
+.content {
+    overflow: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+
+    h6 {
+        color: $green;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+.left {
+    flex: 0 0 70%;
+    margin-right: 0.5rem;
+}
+
+.right {
+    flex: 1 1 auto;
+}
+
+@media (max-width: $sm) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

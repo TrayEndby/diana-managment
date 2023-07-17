@@ -1,0 +1,13 @@
+.top {
+    flex: 0 0 auto;
+}
+
+.main {
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-top: 1rem;
+
+    > * {
+        margin-bottom: 20px;
+    }
+}

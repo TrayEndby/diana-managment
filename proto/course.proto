@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package ai.kyros.diana.service.course;
+
+message Request {
+  enum Mode {
+    LIST = 0;
+    SEARCH = 1;
+  }
+	Mode mode = 1;
+  string query = 2;
+  string course = 3;
+  string topic = 4;
+}
+
+message Response {
+  message Course {
+    string title = 1;
+    string description = 2;
+    string url = 3;
+    string source = 4;
+    string category = 5;
+    uint32 views = 6;
+    uint32 likes = 7;
+    uint32 dislikes = 8;
+    string thumbnail = 9;
+    int32 duration = 10;
+    string section = 11;
+    string course = 12;
+  }
+  repeated Course course = 1;
+
+  message Subject {
+    string name = 1;
+    message Course {
+      string name = 1;
+      string description = 2;
+      repeated string unit = 3;
+    }
+    repeated Course course = 2;
+  }
+  repeated Subject subject = 2;
+}

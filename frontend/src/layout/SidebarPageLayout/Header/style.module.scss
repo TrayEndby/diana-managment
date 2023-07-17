@@ -1,0 +1,47 @@
+@import '../../../constants/variables.scss';
+
+.header {
+    background-color: $grey-dark;
+    color: $white;
+    font-size: 24px;
+    z-index: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0;
+
+    .leftBar {
+        display: flex;
+        flex-direction: column;
+        // height: 70px;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+
+        > form {
+            margin: 0 auto;
+        }
+    }
+
+    p {
+        margin: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: $xl) {
+    .header {
+        flex-direction: row;
+
+        .leftBar {
+            flex-direction: row;
+            margin-bottom: 0;
+            // width: 80%;
+        }
+    }
+}
